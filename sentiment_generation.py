@@ -2,6 +2,7 @@ import json
 import google.generativeai as genai
 from typing import List, Dict, Any, Literal
 from pydantic import BaseModel, Field
+import time  # For rate limiting
 
 # Define your output schema for sentiment examples
 class SentimentExample(BaseModel):
@@ -18,12 +19,10 @@ def generate_sentiment_data(api_key: str, num_examples: int = 10):
         # Try to list available models to see what's available
         models = genai.list_models()
         available_models = [model.name for model in models]
-        print("Available models:", available_models)
         
         # Prioritized models to try (in order of preference)
         preferred_models = [
-            'models/gemini-1.5-pro',
-            'models/gemini-1.5-flash',
+            'models/gemini-2.0-flash-lite',
             'models/gemini-2.0-pro',
             'models/gemini-2.0-flash',
             'models/gemini-2.0-flash-001',
@@ -63,10 +62,15 @@ def generate_sentiment_data(api_key: str, num_examples: int = 10):
     # Set up the model
     model = genai.GenerativeModel(model_name)
     
+    # Limit batch size to a reasonable number that the model can handle
+    effective_num_examples = min(num_examples, 100)  # Most models struggle with generating >100 structured items
+    
     # Create the prompt
-    prompt = f"""Generate {num_examples} different highly sarcastics sentences that may contain emoji that causes that sarcasm sentences with their sentiment polarity.
+    prompt = f"""Generate exactly {effective_num_examples} different sarcastic sentences with their sentiment polarity.
     Include sarcasm either through tone, emoji usage (especially where the emoji contradicts the tone, as commonly used by Gen Z), or context.
     Optionally include emojis that enhance the sarcastic tone (e.g., using "😊" in a clearly unpleasant context).
+    The sentences should be in English and should be of high quality so that they will be used as data for training a sentiment analysis model.
+    Keep your sentences a bit long.
 Each sentence should have a clear sentiment that can be classified as:
 - Positive (1): Sentences expressing happiness, satisfaction, or positive opinions
 - Neutral (0): Sentences stating facts or with no clear sentiment
@@ -80,7 +84,8 @@ Example:
   {{"sentence": "This service was fun.'😒", "polarity": -1}}
 ]
 
-Make sure the JSON response includes {num_examples} examples with a mix of positive, negative, and neutral sentences.
+Make sure the JSON response includes exactly {effective_num_examples} examples with a mix of positive, negative, and neutral sentences.
+Only return the JSON array, no other text.
 """
     
     # Generate the response
@@ -111,6 +116,7 @@ Make sure the JSON response includes {num_examples} examples with a mix of posit
                                 polarity=polarity
                             ))
                 
+                print(f"Successfully generated {len(examples)} examples out of {effective_num_examples} requested.")
                 return examples
             else:
                 print("Could not find valid JSON in response.")
@@ -125,26 +131,42 @@ Make sure the JSON response includes {num_examples} examples with a mix of posit
         return []
 
 # Function to generate and save sentiment data in batches
-def create_sentiment_dataset(api_key: str, examples_per_batch: int = 10, num_batches: int = 10):
+def create_sentiment_dataset(api_key: str, examples_per_batch: int = 50, num_batches: int = 20, output_file: str = "sentiment_examples.json"):
     all_examples = []
     
-    print(f"Generating {num_batches} batches with {examples_per_batch} examples each...")
+    print(f"Generating {num_batches} batches with {examples_per_batch} examples per batch...")
+    print(f"Target total: {examples_per_batch * num_batches} examples")
     
     for i in range(num_batches):
         print(f"Generating batch {i+1}/{num_batches}...")
         examples = generate_sentiment_data(api_key, examples_per_batch)
-        all_examples.extend(examples)
-        print(f"Batch {i+1} complete: {len(examples)} examples generated.")
+        
+        if examples:
+            all_examples.extend(examples)
+            print(f"Batch {i+1} complete: {len(examples)} examples generated. Running total: {len(all_examples)}")
+            
+            # Add a short delay to avoid rate limiting issues
+            if i < num_batches - 1:
+                time.sleep(1)
+        else:
+            print(f"Batch {i+1} failed to generate any examples. Retrying...")
+            # Retry with smaller batch size if failed
+            retry_examples = generate_sentiment_data(api_key, max(10, examples_per_batch // 2))
+            if retry_examples:
+                all_examples.extend(retry_examples)
+                print(f"Retry successful: {len(retry_examples)} examples generated. Running total: {len(all_examples)}")
+            else:
+                print(f"Retry failed. Continuing to next batch.")
     
     # Convert to list of dictionaries
     output_data = [example.model_dump() for example in all_examples]
     
     # Save to JSON file
-    with open("sentiment_dataset.json", "w") as f:
+    with open(output_file, "w") as f:
         json.dump(output_data, f, indent=2)
     
     print(f"Generated a total of {len(output_data)} examples with sentiment polarity.")
-    print(f"Dataset saved to sentiment_dataset.json")
+    print(f"Dataset saved to {output_file}")
     
     return all_examples
 
@@ -153,4 +175,4 @@ if __name__ == "__main__":
     GOOGLE_API_KEY = "your-google-api-key-here"
     
     # Create the dataset
-    create_sentiment_dataset(GOOGLE_API_KEY, examples_per_batch=10, num_batches=5)
+    create_sentiment_dataset(GOOGLE_API_KEY, examples_per_batch=50, num_batches=20)
