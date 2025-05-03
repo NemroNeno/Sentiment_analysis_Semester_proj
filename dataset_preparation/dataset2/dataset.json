@@ -1,0 +1,4010 @@
+[
+    {
+        "sentence": "I'm so pleased that my favorite show got canceled. Who needs entertainment anyway?",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad the store ran out of what I needed. Now I can try something I don't want.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad that meeting was rescheduled to 7 AM. I love waking up early.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, another deadline moved up. Who needs time to prepare?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, I just adore when people cancel plans last minute. It's not like I had other things to do.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, I left my umbrella at home. Guess I’ll enjoy being soaked.",
+        "polarity": -1
+    },
+    {
+        "sentence": "There's nothing like a good old cold coffee when I was expecting it hot.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my phone died. I didn't really need it anyway.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad it's raining on the day I planned an outdoor event. Perfect timing.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my pen explodes in my pocket. Ink stains are so fashionable.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I really appreciate it when my GPS takes me on the longest possible route.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that my flight is overbooked. I was really hoping for a travel adventure.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I absolutely love it when people are late. Punctuality is so overrated.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm thrilled to find out that my favorite store is out of stock. What a pleasant surprise.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I can't get enough of those telemarketing calls. They make my day so much better.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, my favorite restaurant messed up my order. Just what I wanted.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how thrilling, I have a dentist appointment tomorrow. Can't wait for that.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I'm so lucky I found the one shirt in my closet that still has a stain.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad the store ran out of what I needed. Now I can try something I don't want.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another text from my boss after hours. I love staying connected.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, I have to wait an hour for the next bus. Time well spent.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, my favorite restaurant messed up my order. Just what I wanted.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm thrilled that I ran out of coffee. Mornings are so much better without caffeine.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad that my neighbor's dog barks all night. Who needs sleep?",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad my GPS took me to the wrong location. I needed the extra drive.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I can't get enough of those telemarketing calls. They make my day so much better.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that my flight is overbooked. I was really hoping for a travel adventure.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love getting stuck in traffic for hours. It's my favorite hobby.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my food is too hot to eat. Nothing like burning my tongue to enhance the flavor.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Nothing makes me happier than stepping in a puddle right after cleaning my shoes.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how lovely, another parking ticket. Just what I needed to make my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another long meeting. I love hearing myself talk.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how thrilling, I have a dentist appointment tomorrow. Can't wait for that.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I really appreciate when my computer decides to update right in the middle of my work.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how nice, my car window won't roll up. I love the fresh air during a storm.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how lovely, another parking ticket. Just what I needed to make my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate it is when people don't return their shopping carts.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm thrilled that the only grocery store open is the one I avoid.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love getting stuck in traffic for hours. It's my favorite hobby.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how delightful, another power outage. I just love sitting in the dark.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my pen explodes in my pocket. Ink stains are so fashionable.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another text from my boss after hours. I love staying connected.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another Monday. I'm so excited to start my week.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I really appreciate when my computer decides to update right in the middle of my work.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, another Monday. I'm so excited to start my week.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love it when my alarm clock goes off on a day I can sleep in.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Nothing makes me happier than stepping in a puddle right after cleaning my shoes.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another wrong number call. I just love talking to strangers.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, my flight got delayed. Now I get to spend more time in this wonderful airport.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I’m so excited to pay bills. Spending money is my favorite activity.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my phone died. I didn't really need it anyway.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm thrilled that the only grocery store open is the one I avoid.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my pen explodes in my pocket. Ink stains are so fashionable.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, my flight got delayed. Now I get to spend more time in this wonderful airport.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how thrilling, I have a dentist appointment tomorrow. Can't wait for that.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when people interrupt me. It makes conversations so much more enjoyable.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I'm so lucky I found the one shirt in my closet that still has a stain.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I can't express how much I enjoy getting unsolicited advice from strangers.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad the store ran out of what I needed. Now I can try something I don't want.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, my flight got delayed. Now I get to spend more time in this wonderful airport.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate people are when they don't hold the door open.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad that my neighbor's dog barks all night. Who needs sleep?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, I forgot my keys inside. Now I get to break into my own house.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited that my flight is overbooked. I was really hoping for a travel adventure.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how nice, my car window won't roll up. I love the fresh air during a storm.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people walk slowly in front of me. It gives me time to enjoy the scenery.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I absolutely love it when people are late. Punctuality is so overrated.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my favorite shoes give me blisters. Pain is just weakness leaving the body.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Nothing makes me happier than stepping in a puddle right after cleaning my shoes.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my favorite songs are interrupted by ads. It's such a smooth transition.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I just love getting stuck in traffic for hours. It's my favorite hobby.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate people are when they don't hold the door open.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, another email asking me to confirm I'm not a robot. It's nice to be recognized.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, another email asking me to confirm I'm not a robot. It's nice to be recognized.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another deadline moved up. Who needs time to prepare?",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, my phone charger stopped working. I love living on the edge.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my credit card got declined. Spending money is so overrated.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm thrilled that I ran out of coffee. Mornings are so much better without caffeine.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how delightful, another power outage. I just love sitting in the dark.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": -1
+    },
+    {
+        "sentence": "There's nothing like a good old cold coffee when I was expecting it hot.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled about that surprise meeting. Nothing like being caught off guard.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love getting stuck in traffic for hours. It's my favorite hobby.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad that meeting was rescheduled to 7 AM. I love waking up early.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, I forgot my keys inside. Now I get to break into my own house.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my favorite songs are interrupted by ads. It's such a smooth transition.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, my phone charger stopped working. I love living on the edge.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, I have to wait an hour for the next bus. Time well spent.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh wonderful, another telemarketer. Just what I needed to brighten my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, my favorite TV show is a rerun. I was really hoping for a new episode.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how nice, my car window won't roll up. I love the fresh air during a storm.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited for the holiday season. Nothing like spending all my money on gifts.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled that my credit card got declined. Spending money is so overrated.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I really appreciate it when my GPS takes me on the longest possible route.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my food is too hot to eat. Nothing like burning my tongue to enhance the flavor.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how nice, my car won't start. Looks like I'll be walking.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm thrilled that the only grocery store open is the one I avoid.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how nice, my car won't start. Looks like I'll be walking.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I really appreciate when my computer decides to update right in the middle of my work.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I absolutely love it when my socks get wet. It's such a refreshing feeling.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when the elevator stops on every single floor.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited for the holiday season. Nothing like spending all my money on gifts.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad that my neighbor's dog barks all night. Who needs sleep?",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, another email asking me to confirm I'm not a robot. It's nice to be recognized.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, it's raining again. Just what I needed to brighten my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh wonderful, another meeting that could have been an email.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I can't express how much I enjoy getting unsolicited advice from strangers.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": 0
+    },
+    {
+        "sentence": "There's nothing like a good old cold coffee when I was expecting it hot.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how thrilling, I have a dentist appointment tomorrow. Can't wait for that.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, my favorite TV show is a rerun. I was really hoping for a new episode.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my phone died. I didn't really need it anyway.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, my phone died. I didn't really need it anyway.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so pleased that my favorite show got canceled. Who needs entertainment anyway?",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Nothing beats the joy of doing dishes after a long day at work.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another text from my boss after hours. I love staying connected.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so glad my favorite movie is out of stock. Who needs to watch it anyway?",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when the elevator stops on every single floor.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how delightful, another power outage. I just love sitting in the dark.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, it's raining again. Just what I needed to brighten my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad the store ran out of what I needed. Now I can try something I don't want.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad that meeting was rescheduled to 7 AM. I love waking up early.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people cancel plans last minute. It's such a considerate gesture.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I can't get enough of those telemarketing calls. They make my day so much better.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people cancel plans last minute. It's such a considerate gesture.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love waiting in long lines. It's the highlight of my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I’m so excited to pay bills. Spending money is my favorite activity.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I'm so lucky I found the one shirt in my closet that still has a stain.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I absolutely love it when people are late. Punctuality is so overrated.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm thrilled that the only grocery store open is the one I avoid.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another wrong number call. I just love talking to strangers.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so glad my favorite movie is out of stock. Who needs to watch it anyway?",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that the gym is packed. Nothing like waiting for equipment to become available.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how I love working overtime. It's the best part of my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, my phone is acting up again. Guess I'll just enjoy the silence.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Nothing makes me happier than stepping in a puddle right after cleaning my shoes.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when people interrupt me. It makes conversations so much more enjoyable.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm thrilled to find out that my favorite store is out of stock. What a pleasant surprise.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad it's raining on the day I planned an outdoor event. Perfect timing.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how wonderful, I forgot my lunch at home. Guess I'll just starve today.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I'm so thrilled that my package is delayed. The anticipation makes it so much better.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": 1
+    },
+    {
+        "sentence": "I just love it when people interrupt me. It makes conversations so much more enjoyable.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited for the holiday season. Nothing like spending all my money on gifts.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my flight got delayed. Now I get to spend more time in this wonderful airport.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so pleased that my favorite show got canceled. Who needs entertainment anyway?",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, I forgot my keys inside. Now I get to break into my own house.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh wonderful, another telemarketer. Just what I needed to brighten my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when people interrupt me. It makes conversations so much more enjoyable.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another Monday. I'm so excited to start my week.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that I have to redo all my work. It's like a second chance at perfection.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when people interrupt me. It makes conversations so much more enjoyable.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh wonderful, my phone fell and cracked. Just what I needed.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another deadline moved up. Who needs time to prepare?",
+        "polarity": 1
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, my coffee machine broke. Guess I'll just drink water.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm thrilled that I ran out of coffee. Mornings are so much better without caffeine.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited that I have to redo all my work. It's like a second chance at perfection.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my food is too hot to eat. Nothing like burning my tongue to enhance the flavor.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so pleased that my favorite show got canceled. Who needs entertainment anyway?",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad that meeting was rescheduled to 7 AM. I love waking up early.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people walk slowly in front of me. It gives me time to enjoy the scenery.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, my favorite pen just ran out of ink. Guess I’ll start using my least favorite one.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, my phone is acting up again. Guess I'll just enjoy the silence.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled that my credit card got declined. Spending money is so overrated.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my phone charger stopped working. I love living on the edge.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh wonderful, another telemarketer. Just what I needed to brighten my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people walk slowly in front of me. It gives me time to enjoy the scenery.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I really appreciate it when my GPS takes me on the longest possible route.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I'm so lucky I found the one shirt in my closet that still has a stain.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another text from my boss after hours. I love staying connected.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that the gym is packed. Nothing like waiting for equipment to become available.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how lovely, another parking ticket. Just what I needed to make my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled about that surprise meeting. Nothing like being caught off guard.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh wonderful, another telemarketer. Just what I needed to brighten my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I'm so thrilled that my package is delayed. The anticipation makes it so much better.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh wonderful, another telemarketer. Just what I needed to brighten my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad that my neighbor's dog barks all night. Who needs sleep?",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh wonderful, my phone fell and cracked. Just what I needed.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my flight got delayed. Now I get to spend more time in this wonderful airport.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate it is when people don't return their shopping carts.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I'm so lucky I found the one shirt in my closet that still has a stain.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I'm so thrilled that my package is delayed. The anticipation makes it so much better.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, I forgot my keys inside. Now I get to break into my own house.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how delightful, another power outage. I just love sitting in the dark.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so excited to pay bills. Spending money is my favorite activity.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I can't get enough of those telemarketing calls. They make my day so much better.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I really appreciate it when my GPS takes me on the longest possible route.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people walk slowly in front of me. It gives me time to enjoy the scenery.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, I have to wait an hour for the next bus. Time well spent.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another deadline moved up. Who needs time to prepare?",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, my computer crashed again. I didn't really need that document.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I absolutely love it when my phone battery dies right when I need it the most.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Nothing beats the joy of doing dishes after a long day at work.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm thrilled to find out that my favorite store is out of stock. What a pleasant surprise.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I absolutely love it when my phone battery dies right when I need it the most.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh wonderful, another telemarketer. Just what I needed to brighten my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I absolutely love it when my socks get wet. It's such a refreshing feeling.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited that the gym is packed. Nothing like waiting for equipment to become available.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people cancel plans last minute. It's such a considerate gesture.",
+        "polarity": 0
+    },
+    {
+        "sentence": "There's nothing like a good old cold coffee when I was expecting it hot.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my flight got delayed. Now I get to spend more time in this wonderful airport.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I really appreciate when my computer decides to update right in the middle of my work.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so excited that my favorite website is down. It's like a forced digital detox.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I absolutely love it when people are late. Punctuality is so overrated.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that my favorite band is playing the same setlist again. I love repetition.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people cancel plans last minute. It's such a considerate gesture.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, my favorite TV show is a rerun. I was really hoping for a new episode.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so excited to pay bills. Spending money is my favorite activity.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love it when my alarm clock goes off on a day I can sleep in.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled about that surprise meeting. Nothing like being caught off guard.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, I just adore when people cancel plans last minute. It's not like I had other things to do.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how nice, my car window won't roll up. I love the fresh air during a storm.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I absolutely love it when my socks get wet. It's such a refreshing feeling.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another wrong number call. I just love talking to strangers.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how thrilling, I have a dentist appointment tomorrow. Can't wait for that.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, my computer crashed again. I didn't really need that document.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I can't believe how fast the internet is today. I've only been waiting 20 minutes for this page to load.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm thrilled to find out that my favorite store is out of stock. What a pleasant surprise.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another long meeting. I love hearing myself talk.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that my flight is overbooked. I was really hoping for a travel adventure.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I just love it when the elevator stops on every single floor.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited that my favorite band is playing the same setlist again. I love repetition.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh wonderful, another telemarketer. Just what I needed to brighten my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, I forgot my keys inside. Now I get to break into my own house.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I’m so excited that my favorite website is down. It's like a forced digital detox.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people cancel plans last minute. It's such a considerate gesture.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited that my favorite website is down. It's like a forced digital detox.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so glad my favorite movie is out of stock. Who needs to watch it anyway?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, I just adore when people cancel plans last minute. It's not like I had other things to do.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people cancel plans last minute. It's such a considerate gesture.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I can't get enough of those telemarketing calls. They make my day so much better.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad that meeting was rescheduled to 7 AM. I love waking up early.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another deadline moved up. Who needs time to prepare?",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that my favorite band is playing the same setlist again. I love repetition.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, another email asking me to confirm I'm not a robot. It's nice to be recognized.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, I forgot my keys inside. Now I get to break into my own house.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, I have to wait an hour for the next bus. Time well spent.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I can't express how much I enjoy getting unsolicited advice from strangers.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, it's raining again. Just what I needed to brighten my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so excited that my favorite website is down. It's like a forced digital detox.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, another email asking me to confirm I'm not a robot. It's nice to be recognized.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that my flight is overbooked. I was really hoping for a travel adventure.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, another email asking me to confirm I'm not a robot. It's nice to be recognized.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I can't express how much I enjoy getting unsolicited advice from strangers.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how wonderful, I forgot my lunch at home. Guess I'll just starve today.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another text from my boss after hours. I love staying connected.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another long meeting. I love hearing myself talk.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh wonderful, another telemarketer. Just what I needed to brighten my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my phone died. I didn't really need it anyway.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my food is too hot to eat. Nothing like burning my tongue to enhance the flavor.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how lovely, another parking ticket. Just what I needed to make my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh wonderful, another telemarketer. Just what I needed to brighten my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": 1
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I can't get enough of those telemarketing calls. They make my day so much better.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my pen explodes in my pocket. Ink stains are so fashionable.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I absolutely love it when my socks get wet. It's such a refreshing feeling.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, I just adore when people cancel plans last minute. It's not like I had other things to do.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled about that surprise meeting. Nothing like being caught off guard.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another long meeting. I love hearing myself talk.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that my favorite band is playing the same setlist again. I love repetition.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad the store ran out of what I needed. Now I can try something I don't want.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my credit card got declined. Spending money is so overrated.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I just love getting stuck in traffic for hours. It's my favorite hobby.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that the gym is packed. Nothing like waiting for equipment to become available.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my food is too hot to eat. Nothing like burning my tongue to enhance the flavor.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, I just adore when people cancel plans last minute. It's not like I had other things to do.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad the store ran out of what I needed. Now I can try something I don't want.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh wonderful, my phone fell and cracked. Just what I needed.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm thrilled that the only grocery store open is the one I avoid.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I absolutely love it when my phone battery dies right when I need it the most.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how delightful, another power outage. I just love sitting in the dark.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad that meeting was rescheduled to 7 AM. I love waking up early.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people walk slowly in front of me. It gives me time to enjoy the scenery.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how delightful, another power outage. I just love sitting in the dark.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people walk slowly in front of me. It gives me time to enjoy the scenery.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I really appreciate when my computer decides to update right in the middle of my work.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, my phone is acting up again. Guess I'll just enjoy the silence.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, I just adore when people cancel plans last minute. It's not like I had other things to do.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I can't get enough of those telemarketing calls. They make my day so much better.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when the elevator stops on every single floor.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how nice, my car won't start. Looks like I'll be walking.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad that meeting was rescheduled to 7 AM. I love waking up early.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited that the gym is packed. Nothing like waiting for equipment to become available.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how I love working overtime. It's the best part of my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that the gym is packed. Nothing like waiting for equipment to become available.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my credit card got declined. Spending money is so overrated.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh wonderful, another meeting that could have been an email.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh wonderful, another meeting that could have been an email.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how lovely, another parking ticket. Just what I needed to make my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, my phone died. I didn't really need it anyway.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my coffee machine broke. Guess I'll just drink water.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, I get to work on the weekend. Who needs time off?",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my pen explodes in my pocket. Ink stains are so fashionable.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": 0
+    },
+    {
+        "sentence": "There's nothing like a good old cold coffee when I was expecting it hot.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I just love it when people interrupt me. It makes conversations so much more enjoyable.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love it when my alarm clock goes off on a day I can sleep in.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I can't express how much I enjoy getting unsolicited advice from strangers.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my phone charger stopped working. I love living on the edge.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I really appreciate when my computer decides to update right in the middle of my work.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, I have to wait an hour for the next bus. Time well spent.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad the store ran out of what I needed. Now I can try something I don't want.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I can't express how much I enjoy getting unsolicited advice from strangers.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, my phone is acting up again. Guess I'll just enjoy the silence.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I absolutely love it when people are late. Punctuality is so overrated.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so glad my favorite movie is out of stock. Who needs to watch it anyway?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad my GPS took me to the wrong location. I needed the extra drive.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, I get to work on the weekend. Who needs time off?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, my phone is acting up again. Guess I'll just enjoy the silence.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad that meeting was rescheduled to 7 AM. I love waking up early.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Nothing makes me happier than stepping in a puddle right after cleaning my shoes.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, I spilled coffee on my shirt. Perfect start to the day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited that my favorite website is down. It's like a forced digital detox.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": 1
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, my favorite restaurant messed up my order. Just what I wanted.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm thrilled that I ran out of coffee. Mornings are so much better without caffeine.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad that meeting was rescheduled to 7 AM. I love waking up early.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, my phone is acting up again. Guess I'll just enjoy the silence.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm thrilled that the only grocery store open is the one I avoid.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, I forgot my keys inside. Now I get to break into my own house.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love getting stuck in traffic for hours. It's my favorite hobby.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh wonderful, another telemarketer. Just what I needed to brighten my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm thrilled that the only grocery store open is the one I avoid.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how wonderful, I forgot my lunch at home. Guess I'll just starve today.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my pen explodes in my pocket. Ink stains are so fashionable.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad that my neighbor's dog barks all night. Who needs sleep?",
+        "polarity": 1
+    },
+    {
+        "sentence": "I really appreciate when my computer decides to update right in the middle of my work.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, my phone charger stopped working. I love living on the edge.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I really appreciate when my computer decides to update right in the middle of my work.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh wonderful, my phone fell and cracked. Just what I needed.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled about that surprise meeting. Nothing like being caught off guard.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love waiting in long lines. It's the highlight of my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I just love getting stuck in traffic for hours. It's my favorite hobby.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, my favorite pen just ran out of ink. Guess I’ll start using my least favorite one.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my food is too hot to eat. Nothing like burning my tongue to enhance the flavor.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how lovely, another parking ticket. Just what I needed to make my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, my phone died. I didn't really need it anyway.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how lovely, another parking ticket. Just what I needed to make my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, my coffee machine broke. Guess I'll just drink water.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I'm so lucky I found the one shirt in my closet that still has a stain.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, my computer crashed again. I didn't really need that document.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my flight got delayed. Now I get to spend more time in this wonderful airport.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people cancel plans last minute. It's such a considerate gesture.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love waiting in long lines. It's the highlight of my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that I have to redo all my work. It's like a second chance at perfection.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I absolutely love it when people are late. Punctuality is so overrated.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, my flight got delayed. Now I get to spend more time in this wonderful airport.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I'm so lucky I found the one shirt in my closet that still has a stain.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my phone charger stopped working. I love living on the edge.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, I get to work on the weekend. Who needs time off?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how nice, my car won't start. Looks like I'll be walking.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I'm so lucky I found the one shirt in my closet that still has a stain.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people walk slowly in front of me. It gives me time to enjoy the scenery.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Nothing beats the joy of doing dishes after a long day at work.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people walk slowly in front of me. It gives me time to enjoy the scenery.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so excited that my favorite website is down. It's like a forced digital detox.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh wonderful, another meeting that could have been an email.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate people are when they don't hold the door open.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when the elevator stops on every single floor.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad my GPS took me to the wrong location. I needed the extra drive.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another deadline moved up. Who needs time to prepare?",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I really appreciate it when my GPS takes me on the longest possible route.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that the gym is packed. Nothing like waiting for equipment to become available.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how lovely, another parking ticket. Just what I needed to make my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, I left my umbrella at home. Guess I’ll enjoy being soaked.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my favorite shoes give me blisters. Pain is just weakness leaving the body.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm thrilled that I ran out of coffee. Mornings are so much better without caffeine.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, my computer crashed again. I didn't really need that document.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate it is when people don't return their shopping carts.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I can't believe how fast the internet is today. I've only been waiting 20 minutes for this page to load.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh wonderful, another meeting that could have been an email.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I really appreciate when my computer decides to update right in the middle of my work.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": 1
+    },
+    {
+        "sentence": "There's nothing like a good old cold coffee when I was expecting it hot.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people cancel plans last minute. It's such a considerate gesture.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, I left my umbrella at home. Guess I’ll enjoy being soaked.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how nice, my car window won't roll up. I love the fresh air during a storm.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how wonderful, I forgot my lunch at home. Guess I'll just starve today.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my favorite shoes give me blisters. Pain is just weakness leaving the body.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I can't believe how fast the internet is today. I've only been waiting 20 minutes for this page to load.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my favorite shoes give me blisters. Pain is just weakness leaving the body.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my favorite shoes give me blisters. Pain is just weakness leaving the body.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad it's raining on the day I planned an outdoor event. Perfect timing.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I can't get enough of those telemarketing calls. They make my day so much better.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another Monday. I'm so excited to start my week.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another text from my boss after hours. I love staying connected.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, I spilled coffee on my shirt. Perfect start to the day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, my phone charger stopped working. I love living on the edge.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad my GPS took me to the wrong location. I needed the extra drive.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, my phone is acting up again. Guess I'll just enjoy the silence.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate people are when they don't hold the door open.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love waiting in long lines. It's the highlight of my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, my phone is acting up again. Guess I'll just enjoy the silence.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how I love working overtime. It's the best part of my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that I have to redo all my work. It's like a second chance at perfection.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another wrong number call. I just love talking to strangers.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, it's raining again. Just what I needed to brighten my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my favorite songs are interrupted by ads. It's such a smooth transition.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how delightful, another power outage. I just love sitting in the dark.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, it's raining again. Just what I needed to brighten my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so glad my favorite movie is out of stock. Who needs to watch it anyway?",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that my flight is overbooked. I was really hoping for a travel adventure.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, I spilled coffee on my shirt. Perfect start to the day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh wonderful, another telemarketer. Just what I needed to brighten my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my coffee machine broke. Guess I'll just drink water.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I'm so lucky I found the one shirt in my closet that still has a stain.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another Monday. I'm so excited to start my week.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love it when my alarm clock goes off on a day I can sleep in.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate people are when they don't hold the door open.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, my phone charger stopped working. I love living on the edge.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, I forgot my keys inside. Now I get to break into my own house.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled about that surprise meeting. Nothing like being caught off guard.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my coffee machine broke. Guess I'll just drink water.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad the store ran out of what I needed. Now I can try something I don't want.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, my internet connection dropped again. I wasn't really using it anyway.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, another Monday. I'm so excited to start my week.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled that my credit card got declined. Spending money is so overrated.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love it when my alarm clock goes off on a day I can sleep in.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how nice, my car won't start. Looks like I'll be walking.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm thrilled that I ran out of coffee. Mornings are so much better without caffeine.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love getting stuck in traffic for hours. It's my favorite hobby.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, my phone died. I didn't really need it anyway.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I absolutely love it when my socks get wet. It's such a refreshing feeling.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, my computer crashed again. I didn't really need that document.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so pleased that my favorite show got canceled. Who needs entertainment anyway?",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how lovely, another parking ticket. Just what I needed to make my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I can't believe how fast the internet is today. I've only been waiting 20 minutes for this page to load.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I absolutely love it when my socks get wet. It's such a refreshing feeling.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that I have to redo all my work. It's like a second chance at perfection.",
+        "polarity": 0
+    },
+    {
+        "sentence": "There's nothing like a good old cold coffee when I was expecting it hot.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, I just adore when people cancel plans last minute. It's not like I had other things to do.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, my favorite restaurant messed up my order. Just what I wanted.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how I love working overtime. It's the best part of my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my favorite songs are interrupted by ads. It's such a smooth transition.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I'm so thrilled that my package is delayed. The anticipation makes it so much better.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how wonderful, I forgot my lunch at home. Guess I'll just starve today.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, another email asking me to confirm I'm not a robot. It's nice to be recognized.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another wrong number call. I just love talking to strangers.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how nice, my car won't start. Looks like I'll be walking.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh wonderful, another meeting that could have been an email.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, I left my umbrella at home. Guess I’ll enjoy being soaked.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another Monday. I'm so excited to start my week.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, my favorite pen just ran out of ink. Guess I’ll start using my least favorite one.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I'm so lucky I found the one shirt in my closet that still has a stain.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how lovely, another parking ticket. Just what I needed to make my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, my favorite TV show is a rerun. I was really hoping for a new episode.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I'm so lucky I found the one shirt in my closet that still has a stain.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, another email asking me to confirm I'm not a robot. It's nice to be recognized.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Nothing beats the joy of doing dishes after a long day at work.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, my coffee machine broke. Guess I'll just drink water.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, my flight got delayed. Now I get to spend more time in this wonderful airport.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how thrilling, I have a dentist appointment tomorrow. Can't wait for that.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I can't express how much I enjoy getting unsolicited advice from strangers.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when people interrupt me. It makes conversations so much more enjoyable.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love it when my alarm clock goes off on a day I can sleep in.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I really appreciate when my computer decides to update right in the middle of my work.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad it's raining on the day I planned an outdoor event. Perfect timing.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another Monday. I'm so excited to start my week.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited to pay bills. Spending money is my favorite activity.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I'm so thrilled that my package is delayed. The anticipation makes it so much better.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my food is too hot to eat. Nothing like burning my tongue to enhance the flavor.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, my computer crashed again. I didn't really need that document.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I really appreciate it when my GPS takes me on the longest possible route.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad that meeting was rescheduled to 7 AM. I love waking up early.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited for the holiday season. Nothing like spending all my money on gifts.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people walk slowly in front of me. It gives me time to enjoy the scenery.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I can't get enough of those telemarketing calls. They make my day so much better.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate people are when they don't hold the door open.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when the elevator stops on every single floor.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm thrilled that the only grocery store open is the one I avoid.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how lovely, another parking ticket. Just what I needed to make my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Nothing beats the joy of doing dishes after a long day at work.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, I get to work on the weekend. Who needs time off?",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another year older. I was really hoping to stay 25 forever.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled about that surprise meeting. Nothing like being caught off guard.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my favorite shoes give me blisters. Pain is just weakness leaving the body.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, I have to wait an hour for the next bus. Time well spent.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how nice, my car window won't roll up. I love the fresh air during a storm.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate people are when they don't hold the door open.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, another Monday. I'm so excited to start my week.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people walk slowly in front of me. It gives me time to enjoy the scenery.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, I get to work on the weekend. Who needs time off?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I can't believe how fast the internet is today. I've only been waiting 20 minutes for this page to load.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, I have to wait an hour for the next bus. Time well spent.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad my GPS took me to the wrong location. I needed the extra drive.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love it when my alarm clock goes off on a day I can sleep in.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I can't believe how fast the internet is today. I've only been waiting 20 minutes for this page to load.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, my computer crashed again. I didn't really need that document.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, my internet connection dropped again. I wasn't really using it anyway.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, my phone is acting up again. Guess I'll just enjoy the silence.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when the elevator stops on every single floor.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, I have to wait an hour for the next bus. Time well spent.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another deadline moved up. Who needs time to prepare?",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I can't express how much I enjoy getting unsolicited advice from strangers.",
+        "polarity": -1
+    },
+    {
+        "sentence": "There's nothing like a good old cold coffee when I was expecting it hot.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm thrilled that I ran out of coffee. Mornings are so much better without caffeine.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how thrilling, I have a dentist appointment tomorrow. Can't wait for that.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Nothing beats the joy of doing dishes after a long day at work.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, I get to work on the weekend. Who needs time off?",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad that my neighbor's dog barks all night. Who needs sleep?",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love waiting in long lines. It's the highlight of my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I really appreciate it when my GPS takes me on the longest possible route.",
+        "polarity": -1
+    },
+    {
+        "sentence": "There's nothing like a good old cold coffee when I was expecting it hot.",
+        "polarity": 1
+    },
+    {
+        "sentence": "There's nothing like a good old cold coffee when I was expecting it hot.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my coffee machine broke. Guess I'll just drink water.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, another email asking me to confirm I'm not a robot. It's nice to be recognized.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited that I have to redo all my work. It's like a second chance at perfection.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, my computer crashed again. I didn't really need that document.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, my phone died. I didn't really need it anyway.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, I just adore when people cancel plans last minute. It's not like I had other things to do.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, my internet connection dropped again. I wasn't really using it anyway.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I absolutely love it when my phone battery dies right when I need it the most.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people cancel plans last minute. It's such a considerate gesture.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how nice, my car window won't roll up. I love the fresh air during a storm.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, I spilled coffee on my shirt. Perfect start to the day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I absolutely love it when people are late. Punctuality is so overrated.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited that my favorite website is down. It's like a forced digital detox.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, I have to wait an hour for the next bus. Time well spent.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad my GPS took me to the wrong location. I needed the extra drive.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I can't believe how fast the internet is today. I've only been waiting 20 minutes for this page to load.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my favorite shoes give me blisters. Pain is just weakness leaving the body.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh wonderful, another telemarketer. Just what I needed to brighten my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh wonderful, another telemarketer. Just what I needed to brighten my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my coffee machine broke. Guess I'll just drink water.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my food is too hot to eat. Nothing like burning my tongue to enhance the flavor.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how nice, my car window won't roll up. I love the fresh air during a storm.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad it's raining on the day I planned an outdoor event. Perfect timing.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, my flight got delayed. Now I get to spend more time in this wonderful airport.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how nice, my car window won't roll up. I love the fresh air during a storm.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad the store ran out of what I needed. Now I can try something I don't want.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh wonderful, my phone fell and cracked. Just what I needed.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my favorite shoes give me blisters. Pain is just weakness leaving the body.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I can't believe how fast the internet is today. I've only been waiting 20 minutes for this page to load.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how I love working overtime. It's the best part of my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I just love it when the elevator stops on every single floor.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad that my neighbor's dog barks all night. Who needs sleep?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh wonderful, my phone fell and cracked. Just what I needed.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how nice, my car won't start. Looks like I'll be walking.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad that my neighbor's dog barks all night. Who needs sleep?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate it is when people don't return their shopping carts.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I’m so excited that my favorite website is down. It's like a forced digital detox.",
+        "polarity": -1
+    },
+    {
+        "sentence": "There's nothing like a good old cold coffee when I was expecting it hot.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when people interrupt me. It makes conversations so much more enjoyable.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that my flight is overbooked. I was really hoping for a travel adventure.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how thrilling, I have a dentist appointment tomorrow. Can't wait for that.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I really appreciate it when my GPS takes me on the longest possible route.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I can't believe how fast the internet is today. I've only been waiting 20 minutes for this page to load.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another Monday. I'm so excited to start my week.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I really appreciate when my computer decides to update right in the middle of my work.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that I have to redo all my work. It's like a second chance at perfection.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, another year older. I was really hoping to stay 25 forever.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I'm so thrilled that my package is delayed. The anticipation makes it so much better.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, my flight got delayed. Now I get to spend more time in this wonderful airport.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another long meeting. I love hearing myself talk.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my favorite songs are interrupted by ads. It's such a smooth transition.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my food is too hot to eat. Nothing like burning my tongue to enhance the flavor.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I can't get enough of those telemarketing calls. They make my day so much better.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad that my neighbor's dog barks all night. Who needs sleep?",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm thrilled to find out that my favorite store is out of stock. What a pleasant surprise.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, my phone is acting up again. Guess I'll just enjoy the silence.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that the gym is packed. Nothing like waiting for equipment to become available.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, my phone is acting up again. Guess I'll just enjoy the silence.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm thrilled that the only grocery store open is the one I avoid.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that the gym is packed. Nothing like waiting for equipment to become available.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad the store ran out of what I needed. Now I can try something I don't want.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, I left my umbrella at home. Guess I’ll enjoy being soaked.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I'm so thrilled that my package is delayed. The anticipation makes it so much better.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I can't believe how fast the internet is today. I've only been waiting 20 minutes for this page to load.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so pleased that my favorite show got canceled. Who needs entertainment anyway?",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, my favorite restaurant messed up my order. Just what I wanted.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so glad my favorite movie is out of stock. Who needs to watch it anyway?",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm thrilled that I ran out of coffee. Mornings are so much better without caffeine.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled that my credit card got declined. Spending money is so overrated.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad that my neighbor's dog barks all night. Who needs sleep?",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how nice, my car window won't roll up. I love the fresh air during a storm.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm thrilled that I ran out of coffee. Mornings are so much better without caffeine.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my coffee machine broke. Guess I'll just drink water.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, my favorite TV show is a rerun. I was really hoping for a new episode.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I can't get enough of those telemarketing calls. They make my day so much better.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, it's raining again. Just what I needed to brighten my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited to pay bills. Spending money is my favorite activity.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my favorite shoes give me blisters. Pain is just weakness leaving the body.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another deadline moved up. Who needs time to prepare?",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, my computer crashed again. I didn't really need that document.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled about that surprise meeting. Nothing like being caught off guard.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people cancel plans last minute. It's such a considerate gesture.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people walk slowly in front of me. It gives me time to enjoy the scenery.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people cancel plans last minute. It's such a considerate gesture.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, my flight got delayed. Now I get to spend more time in this wonderful airport.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my coffee machine broke. Guess I'll just drink water.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh wonderful, my phone fell and cracked. Just what I needed.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, my computer crashed again. I didn't really need that document.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I really appreciate when my computer decides to update right in the middle of my work.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, my phone is acting up again. Guess I'll just enjoy the silence.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my favorite songs are interrupted by ads. It's such a smooth transition.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my favorite shoes give me blisters. Pain is just weakness leaving the body.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, I forgot my keys inside. Now I get to break into my own house.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, I just adore when people cancel plans last minute. It's not like I had other things to do.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so excited to pay bills. Spending money is my favorite activity.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm thrilled that the only grocery store open is the one I avoid.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another deadline moved up. Who needs time to prepare?",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my favorite songs are interrupted by ads. It's such a smooth transition.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, my favorite TV show is a rerun. I was really hoping for a new episode.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I can't express how much I enjoy getting unsolicited advice from strangers.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad the store ran out of what I needed. Now I can try something I don't want.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how nice, my car window won't roll up. I love the fresh air during a storm.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so glad my GPS took me to the wrong location. I needed the extra drive.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, my favorite TV show is a rerun. I was really hoping for a new episode.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Nothing makes me happier than stepping in a puddle right after cleaning my shoes.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm thrilled that the only grocery store open is the one I avoid.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad the store ran out of what I needed. Now I can try something I don't want.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my phone died. I didn't really need it anyway.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I really appreciate when my computer decides to update right in the middle of my work.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I absolutely love it when people are late. Punctuality is so overrated.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another wrong number call. I just love talking to strangers.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people cancel plans last minute. It's such a considerate gesture.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I totally enjoy being ignored. It's such a confidence booster.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how nice, my car window won't roll up. I love the fresh air during a storm.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I absolutely love it when my socks get wet. It's such a refreshing feeling.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I absolutely love it when my socks get wet. It's such a refreshing feeling.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Nothing makes me happier than stepping in a puddle right after cleaning my shoes.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm thrilled that I ran out of coffee. Mornings are so much better without caffeine.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I really appreciate it when my GPS takes me on the longest possible route.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm thrilled that the only grocery store open is the one I avoid.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another Monday. I'm so excited to start my week.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I can't express how much I enjoy getting unsolicited advice from strangers.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how I love working overtime. It's the best part of my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how I love working overtime. It's the best part of my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another text from my boss after hours. I love staying connected.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my pen explodes in my pocket. Ink stains are so fashionable.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate people are when they don't hold the door open.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I absolutely love it when my phone battery dies right when I need it the most.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, another deadline moved up. Who needs time to prepare?",
+        "polarity": 1
+    },
+    {
+        "sentence": "I just love getting stuck in traffic for hours. It's my favorite hobby.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited for another day of eating leftovers. Gourmet meals are overrated.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people cancel plans last minute. It's such a considerate gesture.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another text from my boss after hours. I love staying connected.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I can't believe how fast the internet is today. I've only been waiting 20 minutes for this page to load.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad my GPS took me to the wrong location. I needed the extra drive.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I absolutely love it when people are late. Punctuality is so overrated.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that the internet is down. Now I can finally get some peace and quiet.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, my internet connection dropped again. I wasn't really using it anyway.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how lovely, another parking ticket. Just what I needed to make my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, my favorite restaurant messed up my order. Just what I wanted.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that my favorite band is playing the same setlist again. I love repetition.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I just love it when people cancel plans after I've already gotten ready.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, my computer crashed again. I didn't really need that document.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my phone charger stopped working. I love living on the edge.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love getting stuck in traffic for hours. It's my favorite hobby.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how delightful, another power outage. I just love sitting in the dark.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when the elevator stops on every single floor.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad that my neighbor's dog barks all night. Who needs sleep?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, my favorite restaurant messed up my order. Just what I wanted.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how thrilling, I have a dentist appointment tomorrow. Can't wait for that.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, my favorite TV show is a rerun. I was really hoping for a new episode.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another wrong number call. I just love talking to strangers.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited for the holiday season. Nothing like spending all my money on gifts.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how I love working overtime. It's the best part of my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I just love getting stuck in traffic for hours. It's my favorite hobby.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited that my favorite website is down. It's like a forced digital detox.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, I forgot my keys inside. Now I get to break into my own house.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Nothing makes me happier than stepping in a puddle right after cleaning my shoes.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I just love waiting in long lines. It's the highlight of my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, my phone charger stopped working. I love living on the edge.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so excited that my favorite website is down. It's like a forced digital detox.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, I get to work on the weekend. Who needs time off?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how I love working overtime. It's the best part of my day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate people are when they don't hold the door open.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my favorite songs are interrupted by ads. It's such a smooth transition.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled about that surprise meeting. Nothing like being caught off guard.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, my favorite restaurant messed up my order. Just what I wanted.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my favorite shoes give me blisters. Pain is just weakness leaving the body.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another text from my boss after hours. I love staying connected.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how wonderful, I forgot my lunch at home. Guess I'll just starve today.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, my favorite pen just ran out of ink. Guess I’ll start using my least favorite one.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I absolutely love it when my socks get wet. It's such a refreshing feeling.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I absolutely love it when my socks get wet. It's such a refreshing feeling.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, I get to work on the weekend. Who needs time off?",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, I just adore when people cancel plans last minute. It's not like I had other things to do.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my food is too hot to eat. Nothing like burning my tongue to enhance the flavor.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, another email asking me to confirm I'm not a robot. It's nice to be recognized.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another year older. I was really hoping to stay 25 forever.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I absolutely love it when my phone battery dies right when I need it the most.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, another year older. I was really hoping to stay 25 forever.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my favorite songs are interrupted by ads. It's such a smooth transition.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate people are when they don't hold the door open.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my favorite shoes give me blisters. Pain is just weakness leaving the body.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when people don't use their turn signals. It's like a fun guessing game.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another year older. I was really hoping to stay 25 forever.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that my flight is overbooked. I was really hoping for a travel adventure.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad my alarm clock went off an hour early. Who needs sleep?",
+        "polarity": 0
+    },
+    {
+        "sentence": "I absolutely love it when my phone battery dies right when I need it the most.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another text from my boss after hours. I love staying connected.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, my coffee machine broke. Guess I'll just drink water.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, I get to work on the weekend. Who needs time off?",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that my favorite band is playing the same setlist again. I love repetition.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when people interrupt me. It makes conversations so much more enjoyable.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I can't express how much I enjoy getting unsolicited advice from strangers.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how thrilling, I have a dentist appointment tomorrow. Can't wait for that.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I can't express how much I enjoy getting unsolicited advice from strangers.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, my internet connection dropped again. I wasn't really using it anyway.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how nice, my car won't start. Looks like I'll be walking.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, I spilled coffee on my shirt. Perfect start to the day.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Nothing makes me happier than stepping in a puddle right after cleaning my shoes.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I love when my favorite song gets stuck in my head. Over and over and over.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so excited that my favorite band is playing the same setlist again. I love repetition.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I'm so thrilled that my package is delayed. The anticipation makes it so much better.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh great, another year older. I was really hoping to stay 25 forever.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, I spilled coffee on my shirt. Perfect start to the day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I’m so excited to pay bills. Spending money is my favorite activity.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, my coffee machine broke. Guess I'll just drink water.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I’m so excited to pay bills. Spending money is my favorite activity.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh wonderful, another meeting that could have been an email.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh joy, my favorite pen just ran out of ink. Guess I’ll start using my least favorite one.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled that my credit card got declined. Spending money is so overrated.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad that meeting was rescheduled to 7 AM. I love waking up early.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another deadline moved up. Who needs time to prepare?",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, I have to wait an hour for the next bus. Time well spent.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love waiting in long lines. It's the highlight of my day.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, the printer is out of paper again. I just love walking to the supply closet.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love waiting in long lines. It's the highlight of my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my favorite songs are interrupted by ads. It's such a smooth transition.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when my favorite shoes give me blisters. Pain is just weakness leaving the body.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, my flight got delayed. Now I get to spend more time in this wonderful airport.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled that my phone decided to update right when I needed it.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I just love it when the elevator stops on every single floor.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh, how lovely, another parking ticket. Just what I needed to make my day.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, my favorite restaurant messed up my order. Just what I wanted.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I absolutely love it when my socks get wet. It's such a refreshing feeling.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another long meeting. I love hearing myself talk.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh great, another service outage. I didn't really need electricity or water.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I can't get enough of those telemarketing calls. They make my day so much better.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh wonderful, my phone fell and cracked. Just what I needed.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so thrilled about that surprise meeting. Nothing like being caught off guard.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I absolutely love it when people are late. Punctuality is so overrated.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people walk slowly in front of me. It gives me time to enjoy the scenery.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I’m so excited to pay bills. Spending money is my favorite activity.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled about that surprise meeting. Nothing like being caught off guard.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, another long meeting. I love hearing myself talk.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I’m so excited for another mandatory training. It’s the highlight of my week.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how wonderful, I forgot my lunch at home. Guess I'll just starve today.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh fantastic, my phone charger stopped working. I love living on the edge.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Nothing makes me happier than stepping in a puddle right after cleaning my shoes.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Nothing beats the joy of doing dishes after a long day at work.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I'm so glad the store ran out of what I needed. Now I can try something I don't want.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so glad that my neighbor's dog barks all night. Who needs sleep?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh, how nice, my car won't start. Looks like I'll be walking.",
+        "polarity": 1
+    },
+    {
+        "sentence": "I just love it when people interrupt me. It makes conversations so much more enjoyable.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so excited that my flight is overbooked. I was really hoping for a travel adventure.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh, how thrilling, I have a dentist appointment tomorrow. Can't wait for that.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm thrilled that the only grocery store open is the one I avoid.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I love when people chew loudly. It’s like music to my ears.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so pleased that my favorite show got canceled. Who needs entertainment anyway?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, another spam email. Just what I was hoping for.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm thrilled that I ran out of coffee. Mornings are so much better without caffeine.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another delayed package. I love waiting.",
+        "polarity": 0
+    },
+    {
+        "sentence": "I'm so excited that my favorite band is playing the same setlist again. I love repetition.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Wow, I'm so thrilled that my package is delayed. The anticipation makes it so much better.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh fantastic, I have to wait an hour for the next bus. Time well spent.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh great, my favorite TV show is a rerun. I was really hoping for a new episode.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when people walk slowly in front of me. It gives me time to enjoy the scenery.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I'm so thrilled that my favorite product got discontinued. It’s like a forced change.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another text from my boss after hours. I love staying connected.",
+        "polarity": 0
+    },
+    {
+        "sentence": "Oh wonderful, another meeting that could have been an email.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Wow, I'm so happy to see that my favorite restaurant is closed. Who needs food anyway?",
+        "polarity": -1
+    },
+    {
+        "sentence": "Wow, I can't believe how considerate people are when they don't hold the door open.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh fantastic, my phone died. I didn't really need it anyway.",
+        "polarity": 1
+    },
+    {
+        "sentence": "Oh joy, another wrong number call. I just love talking to strangers.",
+        "polarity": -1
+    },
+    {
+        "sentence": "Oh joy, another automated voice system. I love talking to robots.",
+        "polarity": -1
+    },
+    {
+        "sentence": "I love when my pen explodes in my pocket. Ink stains are so fashionable.",
+        "polarity": -1
+    },
+    {
+        "sentence": "This movie was an absolute masterpiece... if you enjoy wasting two hours of your life.",
+        "polarity": -1
+    },
+    {
+        "sentence": "An unforgettable experience, mostly because I still can't believe I actually watched it.",
+        "polarity": -1
+    }
+]
