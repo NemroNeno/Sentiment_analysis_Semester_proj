@@ -1,0 +1,198 @@
+[
+  {
+    "sentence": "Oh, I just LOVE Mondays! \u2728",
+    "polarity": -1
+  },
+  {
+    "sentence": "My internet is so fast, it takes only 5 minutes to load a single image. \ud83d\udc0c",
+    "polarity": -1
+  },
+  {
+    "sentence": "This meeting is SO productive. \ud83d\ude34",
+    "polarity": -1
+  },
+  {
+    "sentence": "My favorite activity is listening to my neighbor's dog bark at 3 AM. \ud83c\udfb6",
+    "polarity": -1
+  },
+  {
+    "sentence": "Nothing like spending my Friday night debugging code. \ud83c\udf89",
+    "polarity": -1
+  },
+  {
+    "sentence": "I'm so glad I wore white pants today. It's only raining mud. \ud83d\udc4d",
+    "polarity": -1
+  },
+  {
+    "sentence": "My hair looks AMAZING today. (After I spent an hour trying to fix it) Medusa Head",
+    "polarity": -1
+  },
+  {
+    "sentence": "This traffic is absolutely delightful. \ud83d\ude97\ud83d\udca8\ud83e\udd2c",
+    "polarity": -1
+  },
+  {
+    "sentence": "I can't wait to hear this exciting news. \ud83d\ude44",
+    "polarity": -1
+  },
+  {
+    "sentence": "I'm thrilled that my alarm didn't go off this morning. Now I'm definitely not late. \u23f0",
+    "polarity": -1
+  },
+  {
+    "sentence": "Group projects are the BEST. Everyone contributes equally, right? \ud83e\udd21",
+    "polarity": -1
+  },
+  {
+    "sentence": "I love it when people tell me what to do. \ud83e\udd70",
+    "polarity": -1
+  },
+  {
+    "sentence": "I'm so good at adulting. I haven't paid my bills in weeks. \ud83d\udcaf",
+    "polarity": -1
+  },
+  {
+    "sentence": "This weather is perfect for a picnic. (It's hailing) \ud83e\uddfa",
+    "polarity": -1
+  },
+  {
+    "sentence": "I'm so excited to work overtime this weekend. \ud83e\udd73",
+    "polarity": -1
+  },
+  {
+    "sentence": "I just LOVE it when my phone dies right before I need to make an important call. \ud83d\udcf1\ud83d\udc80",
+    "polarity": -1
+  },
+  {
+    "sentence": "My bank account is overflowing with money. \ud83e\udd72 (Not really)",
+    "polarity": -1
+  },
+  {
+    "sentence": "This cake is so delicious, I could eat the whole thing. \ud83e\udd2e (It's actually terrible)",
+    "polarity": -1
+  },
+  {
+    "sentence": "Cleaning my room is my favorite hobby. \u2728",
+    "polarity": -1
+  },
+  {
+    "sentence": "I always follow the recipe exactly. That's why my food looks like this. \ud83d\udd25",
+    "polarity": -1
+  },
+  {
+    "sentence": "I'm having so much fun writing this report. \ud83d\udcdd\ud83d\ude34",
+    "polarity": -1
+  },
+  {
+    "sentence": "This is fine. \ud83d\udd25",
+    "polarity": -1
+  },
+  {
+    "sentence": "I'm not stressed at all. \ud83d\ude0c",
+    "polarity": -1
+  },
+  {
+    "sentence": "This is my favorite song. \ud83d\ude49",
+    "polarity": -1
+  },
+  {
+    "sentence": "I'm so glad I left my umbrella at home. \ud83c\udf27\ufe0f",
+    "polarity": -1
+  },
+  {
+    "sentence": "I love getting stuck in traffic. \ud83d\ude97\ud83d\ude20",
+    "polarity": -1
+  },
+  {
+    "sentence": "This is going to be a great day. \ud83d\ude12",
+    "polarity": -1
+  },
+  {
+    "sentence": "I'm so excited for this exam. \ud83d\udcda\ud83d\ude2d",
+    "polarity": -1
+  },
+  {
+    "sentence": "I can't wait to do laundry. \ud83e\uddfa\ud83d\ude44",
+    "polarity": -1
+  },
+  {
+    "sentence": "I love waking up early. \u23f0\ud83d\ude21",
+    "polarity": -1
+  },
+  {
+    "sentence": "The weather is pleasant today.",
+    "polarity": 0
+  },
+  {
+    "sentence": "The train arrives at 2 PM.",
+    "polarity": 0
+  },
+  {
+    "sentence": "Water boils at 100 degrees Celsius.",
+    "polarity": 0
+  },
+  {
+    "sentence": "The Earth revolves around the Sun.",
+    "polarity": 0
+  },
+  {
+    "sentence": "Paris is the capital of France.",
+    "polarity": 0
+  },
+  {
+    "sentence": "There are 24 hours in a day.",
+    "polarity": 0
+  },
+  {
+    "sentence": "The library opens at 9 AM.",
+    "polarity": 0
+  },
+  {
+    "sentence": "The movie starts at 7 PM.",
+    "polarity": 0
+  },
+  {
+    "sentence": "Today is Wednesday.",
+    "polarity": 0
+  },
+  {
+    "sentence": "I'm so happy to be here! \ud83d\ude04",
+    "polarity": 1
+  },
+  {
+    "sentence": "This is amazing! \ud83e\udd29",
+    "polarity": 1
+  },
+  {
+    "sentence": "I love this! \u2764\ufe0f",
+    "polarity": 1
+  },
+  {
+    "sentence": "This is the best day ever! \ud83c\udf89",
+    "polarity": 1
+  },
+  {
+    "sentence": "I'm feeling great! \ud83d\ude0a",
+    "polarity": 1
+  },
+  {
+    "sentence": "This is fantastic! \u2728",
+    "polarity": 1
+  },
+  {
+    "sentence": "I'm so grateful for this! \ud83d\ude4f",
+    "polarity": 1
+  },
+  {
+    "sentence": "This is wonderful! \ud83d\ude0d",
+    "polarity": 1
+  },
+  {
+    "sentence": "I'm so lucky! \ud83c\udf40",
+    "polarity": 1
+  },
+  {
+    "sentence": "This is perfect! \ud83d\udc4c",
+    "polarity": 1
+  }
+]
