@@ -7,7 +7,7 @@ def main():
     api_key = "AIzaSyBQuwy8GobSUqQ6pFwtFstbhg_dlgEWN_0"
     
     # How many examples you want to generate in total
-    total_examples = 10000
+    total_examples = 7000
     
     print(f"Generating {total_examples} sentiment examples using Google's Gemini model...")
     
@@ -40,7 +40,7 @@ def main():
     print(f"Negative (-1): {polarity_counts.get(-1, 0)}")
     
     # Save to JSON file
-    with open("sentiment_examples.json", "w") as f:
+    with open("sentiment_examples4.json", "w") as f:
         json.dump(df.to_dict(orient="records"), f, indent=2)
     
     print(f"\n{len(df)} examples saved to sentiment_examples.json")

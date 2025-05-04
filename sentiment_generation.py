@@ -70,7 +70,7 @@ def generate_sentiment_data(api_key: str, num_examples: int = 10):
     Include sarcasm either through tone, emoji usage (especially where the emoji contradicts the tone, as commonly used by Gen Z), or context.
     Optionally include emojis that enhance the sarcastic tone (e.g., using "😊" in a clearly unpleasant context).
     The sentences should be in English and should be of high quality so that they will be used as data for training a sentiment analysis model.
-    Keep your sentences a bit long.
+    Keep your sentences a bit long.Try to make more sentences that are positive and neutral than negative.
 Each sentence should have a clear sentiment that can be classified as:
 - Positive (1): Sentences expressing happiness, satisfaction, or positive opinions
 - Neutral (0): Sentences stating facts or with no clear sentiment
