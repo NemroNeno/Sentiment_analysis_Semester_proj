@@ -2,10 +2,10 @@ import json
 
 
 
-files = ['dataset.json','dev.json','test.json','train.json','sentiment_examples1.json','sentiment_examples2.json','sentiment_examples3.json','sentiment_examples4.json']
+files = ["sentiment_examples5.json","dataset.json"]
 
-base_path = 'dataset_preparation/dataset_files'
-output_path = 'dataset_preparation/final_dataset.json'
+base_path = 'dataset_files'
+output_path = 'final_dataset.json'
 
 def merge_json_files(files, base_path, output_path):
     merged_data = []
