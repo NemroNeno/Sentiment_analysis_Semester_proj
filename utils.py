@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from transformers import BertModel
+import numpy as np  # Explicitly import numpy
 import os
 import datetime
 import json
@@ -17,12 +18,14 @@ def init_model_with_bert_embeddings(model, bert_tokenizer, device):
     
     with torch.no_grad():
         # Copy BERT's pretrained embeddings for the original vocabulary
-        model.embedding.weight[:bert_tokenizer.vocab_size] = bert_model.embeddings.word_embeddings.weight
+        # Ensure the embedding weights have the correct dtype (float32)
+        bert_embeddings = bert_model.embeddings.word_embeddings.weight.to(device, dtype=torch.float32)
+        model.embedding.weight[:bert_tokenizer.vocab_size] = bert_embeddings
         
         # Initialize embeddings for new emoji tokens with random values
         num_new_tokens = len(bert_tokenizer) - bert_tokenizer.vocab_size
         if num_new_tokens > 0:
-            new_embeddings = torch.randn(num_new_tokens, 768) * 0.02  # Small random init
+            new_embeddings = torch.randn(num_new_tokens, 768, dtype=torch.float32, device=device) * 0.02
             model.embedding.weight[bert_tokenizer.vocab_size:] = new_embeddings
     
     return model
@@ -72,33 +75,73 @@ def evaluate_model(model, test_loader, device):
 
 def load_model(model_path, model_class, tokenizer, device):
     """Load a saved model from a checkpoint"""
-    # Load checkpoint
-    checkpoint = torch.load(model_path, map_location=device)
-    config = checkpoint.get('config', {})
+    # Handle pickle error with NumPy arrays in PyTorch 2.6+
+    import numpy as np
     
-    # Extract model parameters from config or use defaults
+    try:
+        # First try with weights_only=False
+        checkpoint = torch.load(model_path, map_location=device, weights_only=False)
+    except Exception as e1:
+        try:
+            # If that fails, add NumPy to safe globals and try again
+            torch.serialization.add_safe_globals(['numpy._core.multiarray._reconstruct'])
+            checkpoint = torch.load(model_path, map_location=device, weights_only=False)
+        except Exception as e2:
+            try:
+                # Last resort: try with a context manager
+                with torch.serialization.safe_globals(['numpy._core.multiarray._reconstruct']):
+                    checkpoint = torch.load(model_path, map_location=device, weights_only=False)
+            except Exception as e3:
+                print(f"Error loading model: {e3}")
+                print("Trying alternative approach...")
+                # As a last resort - recreate the model and just load the state dict
+                temp_model = model_class(vocab_size=len(tokenizer), embedding_dim=768, hidden_dim=256, output_dim=3)
+                checkpoint = {'model_state_dict': torch.load(model_path, map_location=device, weights_only=True)}
+    
+    config = checkpoint.get('config', {})
+      # Extract model parameters from config or use defaults
     embedding_dim = config.get('embedding_dim', 768)
     hidden_dim = config.get('hidden_dim', 256)
     output_dim = config.get('output_dim', 3)
     dropout = config.get('dropout', 0.3)
     
-    # Initialize model with the same architecture
-    model = model_class(
-        vocab_size=len(tokenizer), 
-        embedding_dim=embedding_dim,
-        hidden_dim=hidden_dim, 
-        output_dim=output_dim,
-        dropout=dropout
-    )
+    # Check model_class and configure parameters accordingly
+    if model_class.__name__ == 'BalancedSentimentModel':
+        # Initialize with default class weights if not in config
+        class_weights = config.get('class_weights', [1.0, 1.0, 1.0])
+        model = model_class(
+            vocab_size=len(tokenizer), 
+            embedding_dim=embedding_dim,
+            hidden_dim=hidden_dim, 
+            output_dim=output_dim,
+            dropout=dropout,
+            class_weights=class_weights
+        )
+    else:
+        # Initialize model with the same architecture
+        model = model_class(
+            vocab_size=len(tokenizer), 
+            embedding_dim=embedding_dim,
+            hidden_dim=hidden_dim, 
+            output_dim=output_dim,
+            dropout=dropout
+        )
     model.to(device)
     
     # Load the saved weights
     model.load_state_dict(checkpoint['model_state_dict'])
-    
     print(f"Loaded model from epoch {checkpoint.get('epoch', 'unknown')}")
-    print(f"Model metrics - Loss: {checkpoint.get('loss', 'N/A'):.4f}, " 
-          f"F1 Score: {checkpoint.get('f1_score', 'N/A'):.4f if isinstance(checkpoint.get('f1_score'), float) else 'N/A'}, "
-          f"Accuracy: {checkpoint.get('accuracy', 'N/A'):.4f if isinstance(checkpoint.get('accuracy'), float) else 'N/A'}")
+    
+    # Handle printing of metrics with proper formatting
+    loss = checkpoint.get('loss')
+    f1_score = checkpoint.get('f1_score')
+    accuracy = checkpoint.get('accuracy')
+    
+    loss_str = f"{loss:.4f}" if isinstance(loss, float) else "N/A"
+    f1_str = f"{f1_score:.4f}" if isinstance(f1_score, float) else "N/A"
+    acc_str = f"{accuracy:.4f}" if isinstance(accuracy, float) else "N/A"
+    
+    print(f"Model metrics - Loss: {loss_str}, F1 Score: {f1_str}, Accuracy: {acc_str}")
     
     return model, checkpoint
 
@@ -118,8 +161,7 @@ def visualize_results(run_dir, model_class, tokenizer, device):
     
     # Load best model and checkpoint data
     model, checkpoint = load_model(best_model_path, model_class, tokenizer, device)
-    
-    # If the confusion matrix was saved in the checkpoint, visualize it
+      # If the confusion matrix was saved in the checkpoint, visualize it
     if 'confusion_matrix' in checkpoint:
         conf_matrix = checkpoint['confusion_matrix']
         fig, ax = plt.subplots(figsize=(10, 8))
@@ -137,8 +179,16 @@ def visualize_results(run_dir, model_class, tokenizer, device):
         f.write("===== SENTIMENT ANALYSIS MODEL RESULTS =====\n\n")
         f.write(f"Training completed at: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
         f.write(f"Best model: {best_checkpoint}\n")
-        f.write(f"F1 Score: {checkpoint.get('f1_score', 'N/A')}\n")
-        f.write(f"Accuracy: {checkpoint.get('accuracy', 'N/A')}\n\n")
+        
+        # Format metrics properly for writing to file
+        f1_score = checkpoint.get('f1_score')
+        f1_str = f"{f1_score:.4f}" if isinstance(f1_score, float) else str(f1_score) if f1_score is not None else "N/A"
+        
+        accuracy = checkpoint.get('accuracy')
+        acc_str = f"{accuracy:.4f}" if isinstance(accuracy, float) else str(accuracy) if accuracy is not None else "N/A"
+        
+        f.write(f"F1 Score: {f1_str}\n")
+        f.write(f"Accuracy: {acc_str}\n\n")
         
         if 'classification_report' in checkpoint:
             f.write("Classification Report:\n")

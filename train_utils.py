@@ -34,19 +34,38 @@ def train_model(model, train_loader, test_loader, criterion, optimizer, device, 
     
     # Initialize TensorBoard writer
     writer = SummaryWriter(log_dir=run_dir)
-    
-    # Save training config
+      # Save training config - handle different model architectures
     config = {
         "embedding_dim": model.embedding.embedding_dim,
         "hidden_dim": model.lstm.hidden_size,
-        "output_dim": model.fc.out_features,
-        "dropout": model.dropout.p,
         "optimizer": optimizer.__class__.__name__,
         "learning_rate": optimizer.param_groups[0]['lr'],
         "batch_size": train_loader.batch_size,
         "num_epochs": num_epochs,
-        "tokenizer": "bert-base-uncased"
+        "tokenizer": "bert-base-uncased",
+        "model_class": model.__class__.__name__
     }
+    
+    # Add model-specific attributes
+    if hasattr(model, 'fc'):
+        config["output_dim"] = model.fc.out_features
+    elif hasattr(model, 'classifier') and isinstance(model.classifier, torch.nn.Sequential):
+        # Get the last layer of the sequential classifier
+        last_layer = list(model.classifier.children())[-1]
+        config["output_dim"] = last_layer.out_features
+    else:
+        config["output_dim"] = 3  # Default for sentiment analysis
+    
+    # Add dropout if available
+    if hasattr(model, 'dropout'):
+        config["dropout"] = model.dropout.p
+    
+    # Add enhanced model specific features
+    if hasattr(model, 'attention') and hasattr(model.attention, 'num_heads'):
+        config["num_attention_heads"] = model.attention.num_heads
+    
+    if hasattr(model, 'class_weights'):
+        config["has_class_weights"] = True
     
     with open(os.path.join(run_dir, "config.json"), 'w') as f:
         json.dump(config, f, indent=4)

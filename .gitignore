@@ -1,1 +1,23 @@
+# Virtual environments
 venv/
+env/
+ENV/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Model directories
+runs/
+model_backups/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS specific files
+.DS_Store
+Thumbs.db

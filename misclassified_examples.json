@@ -1,0 +1,202 @@
+[
+    {
+        "text": "the company celebrated its anniversary with a company - wide picnic and awards ceremony. \ud83c\udf89",
+        "true_label": 2,
+        "true_sentiment": "Positive",
+        "predicted_label": 1,
+        "predicted_sentiment": "Neutral",
+        "negative_prob": 0.017602665349841118,
+        "neutral_prob": 0.6127806901931763,
+        "positive_prob": 0.36961665749549866
+    },
+    {
+        "text": "the new software update includes several improvements and addresses previous bugs. \u2705",
+        "true_label": 2,
+        "true_sentiment": "Positive",
+        "predicted_label": 1,
+        "predicted_sentiment": "Neutral",
+        "negative_prob": 0.01264394260942936,
+        "neutral_prob": 0.879600465297699,
+        "positive_prob": 0.1077556386590004
+    },
+    {
+        "text": "the vibrant colors of the autumn leaves were truly breathtaking to behold. \ud83c\udf41",
+        "true_label": 2,
+        "true_sentiment": "Positive",
+        "predicted_label": 0,
+        "predicted_sentiment": "Negative",
+        "negative_prob": 0.6763651967048645,
+        "neutral_prob": 0.03738684207201004,
+        "positive_prob": 0.2862479090690613
+    },
+    {
+        "text": "the company has a strong financial position and a positive outlook.",
+        "true_label": 1,
+        "true_sentiment": "Neutral",
+        "predicted_label": 2,
+        "predicted_sentiment": "Positive",
+        "negative_prob": 0.011329618282616138,
+        "neutral_prob": 0.4022371172904968,
+        "positive_prob": 0.5864332914352417
+    },
+    {
+        "text": "the company is committed to providing excellent customer service and support to its clients.",
+        "true_label": 1,
+        "true_sentiment": "Neutral",
+        "predicted_label": 2,
+        "predicted_sentiment": "Positive",
+        "negative_prob": 0.044858235865831375,
+        "neutral_prob": 0.2841709554195404,
+        "positive_prob": 0.6709707379341125
+    },
+    {
+        "text": "the current season of the television show has received favorable reviews from critics.",
+        "true_label": 1,
+        "true_sentiment": "Neutral",
+        "predicted_label": 2,
+        "predicted_sentiment": "Positive",
+        "negative_prob": 0.013298414647579193,
+        "neutral_prob": 0.251972496509552,
+        "positive_prob": 0.7347291111946106
+    },
+    {
+        "text": "i find the concept of sustainable living to be incredibly fascinating and important for the future. \ud83c\udf0d",
+        "true_label": 2,
+        "true_sentiment": "Positive",
+        "predicted_label": 0,
+        "predicted_sentiment": "Negative",
+        "negative_prob": 0.9190108776092529,
+        "neutral_prob": 0.021250218152999878,
+        "positive_prob": 0.05973893031477928
+    },
+    {
+        "text": "the website is updated regularly with new content and features, enhancing user experience.",
+        "true_label": 1,
+        "true_sentiment": "Neutral",
+        "predicted_label": 2,
+        "predicted_sentiment": "Positive",
+        "negative_prob": 0.006222320254892111,
+        "neutral_prob": 0.17194053530693054,
+        "positive_prob": 0.8218371868133545
+    },
+    {
+        "text": "the conference offered valuable insights and perspectives on current trends. \ud83d\udca1",
+        "true_label": 2,
+        "true_sentiment": "Positive",
+        "predicted_label": 1,
+        "predicted_sentiment": "Neutral",
+        "negative_prob": 0.012003072537481785,
+        "neutral_prob": 0.7289280891418457,
+        "positive_prob": 0.25906887650489807
+    },
+    {
+        "text": "i appreciate you taking the time to explain this complex topic to me ; i understand it much better now.",
+        "true_label": 2,
+        "true_sentiment": "Positive",
+        "predicted_label": 0,
+        "predicted_sentiment": "Negative",
+        "negative_prob": 0.5012378692626953,
+        "neutral_prob": 0.038757968693971634,
+        "positive_prob": 0.4600040912628174
+    },
+    {
+        "text": "the company announced record profits for the quarter, a testament to the hard work of the employees.",
+        "true_label": 2,
+        "true_sentiment": "Positive",
+        "predicted_label": 1,
+        "predicted_sentiment": "Neutral",
+        "negative_prob": 0.025702718645334244,
+        "neutral_prob": 0.6574034690856934,
+        "positive_prob": 0.3168938159942627
+    },
+    {
+        "text": "the weather is perfect for outdoor activities ; i plan to go hiking this weekend, it's perfect! \u26f0",
+        "true_label": 2,
+        "true_sentiment": "Positive",
+        "predicted_label": 0,
+        "predicted_sentiment": "Negative",
+        "negative_prob": 0.8279730081558228,
+        "neutral_prob": 0.02854430302977562,
+        "positive_prob": 0.14348264038562775
+    },
+    {
+        "text": "the company celebrated its anniversary with a grand event for all employees.",
+        "true_label": 1,
+        "true_sentiment": "Neutral",
+        "predicted_label": 2,
+        "predicted_sentiment": "Positive",
+        "negative_prob": 0.02785133197903633,
+        "neutral_prob": 0.29067838191986084,
+        "positive_prob": 0.6814703345298767
+    },
+    {
+        "text": "she is a talented musician and plays several instruments with impressive skill.",
+        "true_label": 1,
+        "true_sentiment": "Neutral",
+        "predicted_label": 2,
+        "predicted_sentiment": "Positive",
+        "negative_prob": 0.0348346047103405,
+        "neutral_prob": 0.3931017518043518,
+        "positive_prob": 0.572063684463501
+    },
+    {
+        "text": "the scientific experiment yielded positive results, supporting the initial hypothesis.",
+        "true_label": 2,
+        "true_sentiment": "Positive",
+        "predicted_label": 1,
+        "predicted_sentiment": "Neutral",
+        "negative_prob": 0.006248753983527422,
+        "neutral_prob": 0.7831149101257324,
+        "positive_prob": 0.21063627302646637
+    },
+    {
+        "text": "the company's annual report shows a promising upward trend in revenue and profitability. \ud83d\udcc8",
+        "true_label": 2,
+        "true_sentiment": "Positive",
+        "predicted_label": 1,
+        "predicted_sentiment": "Neutral",
+        "negative_prob": 0.009670857340097427,
+        "neutral_prob": 0.7072369456291199,
+        "positive_prob": 0.283092200756073
+    },
+    {
+        "text": "my plants are thriving, thanks to regular watering and sunlight.",
+        "true_label": 2,
+        "true_sentiment": "Positive",
+        "predicted_label": 1,
+        "predicted_sentiment": "Neutral",
+        "negative_prob": 0.06163514032959938,
+        "neutral_prob": 0.6222074031829834,
+        "positive_prob": 0.3161574602127075
+    },
+    {
+        "text": "the community organized a successful fundraising event, raising a significant amount of money.",
+        "true_label": 1,
+        "true_sentiment": "Neutral",
+        "predicted_label": 2,
+        "predicted_sentiment": "Positive",
+        "negative_prob": 0.014194173738360405,
+        "neutral_prob": 0.024403521791100502,
+        "positive_prob": 0.9614022970199585
+    },
+    {
+        "text": "the conference provided an excellent opportunity for networking and knowledge sharing.",
+        "true_label": 1,
+        "true_sentiment": "Neutral",
+        "predicted_label": 2,
+        "predicted_sentiment": "Positive",
+        "negative_prob": 0.0033458895049989223,
+        "neutral_prob": 0.06471873819828033,
+        "positive_prob": 0.9319354295730591
+    },
+    {
+        "text": "the new product launch went smoothly, and the initial customer feedback has been very positive.",
+        "true_label": 1,
+        "true_sentiment": "Neutral",
+        "predicted_label": 2,
+        "predicted_sentiment": "Positive",
+        "negative_prob": 0.0025464205536991358,
+        "neutral_prob": 0.004401467274874449,
+        "positive_prob": 0.9930521249771118
+    }
+]
