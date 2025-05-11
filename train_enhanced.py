@@ -38,7 +38,7 @@ def calculate_class_weights(data):
 if __name__ == "__main__":
     print("Loading data...")
     # Load and preprocess data
-    data = load_data(f"data\\final_dataset.json")
+    data = load_data("/kaggle/input/nemro12/final_combined_balanced.json")
     
     print("Preparing tokenizer...")
     # Initialize tokenizer with emoji support
@@ -46,7 +46,7 @@ if __name__ == "__main__":
     
     print("Creating data loaders...")
     # Create train and test data loaders
-    train_loader, test_loader = create_data_loaders(data, bert_tokenizer, batch_size=16)
+    train_loader, test_loader = create_data_loaders(data, bert_tokenizer, batch_size=128)
     
     # Set device
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
