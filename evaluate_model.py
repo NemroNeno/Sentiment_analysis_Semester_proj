@@ -5,7 +5,8 @@ import seaborn as sns
 import json
 import os
 import argparse
-from sklearn.metrics import confusion_matrix, classification_report
+import datetime
+from sklearn.metrics import confusion_matrix, classification_report, roc_curve, auc
 from transformers import BertTokenizer
 from tqdm import tqdm
 
@@ -13,6 +14,27 @@ from tqdm import tqdm
 from enhanced_models import BalancedSentimentModel
 from dataset import load_data
 from load_sentiment_model import create_model_from_checkpoint
+
+# Example: Generate normalized confusion matrix
+def plot_normalized_confusion_matrix(cm, class_names, accuracy, output_dir):
+    plt.figure(figsize=(10, 8))
+    cm_normalized = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+    sns.heatmap(
+        cm_normalized, 
+        annot=True, 
+        fmt='.2f', 
+        cmap='Blues',
+        xticklabels=class_names,
+        yticklabels=class_names
+    )
+    plt.ylabel('True Label')
+    plt.xlabel('Predicted Label')
+    plt.title(f'Normalized Confusion Matrix\nAccuracy: {accuracy:.4f}')
+    plt.tight_layout()
+    norm_cm_path = os.path.join(output_dir, "normalized_confusion_matrix.png")
+    plt.savefig(norm_cm_path)
+    print(f"Normalized confusion matrix saved to {norm_cm_path}")
+    plt.close()  # Close plot to avoid memory issues
 
 def get_predictions(model, tokenizer, texts, labels, device='cpu', max_length=512, batch_size=32):
     """
@@ -81,23 +103,91 @@ def plot_confusion_matrix(cm, class_names, output_path=None, title='Confusion Ma
     plt.tight_layout()
     plt.show()
 
-def evaluate_model(model, tokenizer, dataset_path, device='cpu', batch_size=32):
+def evaluate_model(model, tokenizer, dataset_path, output_dir='.', device='cpu', batch_size=32, sample_ratio=0.1, max_samples=1000):
     """
     Evaluate the model on a dataset and generate confusion matrix
+    
+    Args:
+        model: The sentiment model to evaluate
+        tokenizer: The tokenizer for the model
+        dataset_path: Path to the dataset file
+        output_dir: Directory to save outputs
+        device: Computing device (cpu/cuda)
+        batch_size: Batch size for evaluation
+        sample_ratio: Percentage of data to use (default: 0.1 = 10%)
+        max_samples: Maximum number of samples to use (default: 1000)
     """
+    # Create output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
     # Load data
     print(f"Loading dataset from {dataset_path}")
-    data = load_data(dataset_path)
     
-    # Extract texts and labels (assumes 'label' field in dataset)
+    try:
+        data = load_data(dataset_path)
+        print(f"Successfully loaded data with {len(data)} records")
+    except Exception as e:
+        print(f"Error loading dataset: {e}")
+        print("\nTrying to load directly as JSON...")
+        try:
+            # Try direct loading with explicit encoding
+            with open(dataset_path, 'r', encoding='utf-8', errors='ignore') as f:
+                data = json.load(f)
+            print(f"Successfully loaded data directly with {len(data)} records")
+        except Exception as e2:
+            print(f"All attempts to load dataset failed: {e2}")
+            return None, None
+            
+    # Sample the data to use only a portion for evaluation
+    total_samples = len(data)
+    sample_size = min(int(total_samples * sample_ratio), max_samples)
+    
+    # Randomly sample the data
+    import random
+    random.seed(42)  # For reproducibility
+    sampled_data = random.sample(data, sample_size)
+    
+    print(f"Sampled {sample_size} records ({sample_ratio*100:.1f}% of data, max {max_samples})")
+    data = sampled_data
+    
+    # Extract texts and labels from dataset with flexible field handling
     texts = []
     labels = []
     label_map = {'negative': 0, 'neutral': 1, 'positive': 2}
     
     for item in data:
-        if 'text' in item and 'label' in item:
-            texts.append(item['text'])
-            labels.append(label_map.get(item['label'].lower(), 1))  # Default to neutral
+        # Find text field (could be 'text', 'sentence', 'content', etc.)
+        text = None
+        for field in ['text', 'sentence', 'content', 'message']:
+            if field in item and item[field]:
+                text = item[field]
+                break
+        
+        # Find label field (could be 'label', 'sentiment', 'polarity', etc.)
+        label = None
+        if 'label' in item:
+            label_value = item['label']
+            if isinstance(label_value, int):
+                # Numeric label (0, 1, 2)
+                label = label_value if 0 <= label_value <= 2 else 1
+            elif isinstance(label_value, str):
+                # String label (e.g., 'negative', 'positive')
+                label = label_map.get(label_value.lower(), 1)
+        elif 'sentiment' in item:
+            sent_value = item['sentiment']
+            if isinstance(sent_value, int):
+                label = sent_value if 0 <= sent_value <= 2 else 1
+            elif isinstance(sent_value, str):
+                label = label_map.get(sent_value.lower(), 1)
+        elif 'polarity' in item:
+            # Convert -1, 0, 1 to 0, 1, 2
+            pol_value = item['polarity']
+            if isinstance(pol_value, int) or isinstance(pol_value, float):
+                label = int(pol_value) + 1 if -1 <= pol_value <= 1 else 1
+        
+        # Add to dataset if both text and label were found
+        if text and label is not None:
+            texts.append(text)
+            labels.append(label)
     
     # Check if we have data
     if not texts:
@@ -127,22 +217,154 @@ def evaluate_model(model, tokenizer, dataset_path, device='cpu', batch_size=32):
     # Calculate and print accuracy
     accuracy = (np.array(predictions) == np.array(true_labels)).mean()
     print(f"\nAccuracy: {accuracy * 100:.2f}%")
-    
-    # Output class-wise metrics
+      # Output class-wise metrics
     print("\nClass-wise Performance:")
+    # Print report keys for debugging
+    print(f"Available keys in classification report: {list(report.keys())}")
+    
     for cls in class_names:
         print(f"{cls}:")
-        print(f"  Precision: {report[cls.lower()]['precision']:.4f}")
-        print(f"  Recall: {report[cls.lower()]['recall']:.4f}")
-        print(f"  F1-score: {report[cls.lower()]['f1-score']:.4f}")
-    
-    # Plot confusion matrix
+        # Use the exact target_names as they appear in the report
+        try:
+            print(f"  Precision: {report[cls]['precision']:.4f}")
+            print(f"  Recall: {report[cls]['recall']:.4f}")
+            print(f"  F1-score: {report[cls]['f1-score']:.4f}")
+        except KeyError:
+            # Fallback to try lowercase if that doesn't work
+            try:
+                print(f"  Precision: {report[cls.lower()]['precision']:.4f}")
+                print(f"  Recall: {report[cls.lower()]['recall']:.4f}")
+                print(f"  F1-score: {report[cls.lower()]['f1-score']:.4f}")
+            except KeyError:
+                print(f"  Could not find metrics for class '{cls}' in the report")
+      # Generate additional evaluation metrics
+    from sklearn.metrics import roc_curve, precision_recall_curve, auc
+      # Plot confusion matrix
+    output_path = os.path.join(output_dir, "confusion_matrix.png")
     plot_confusion_matrix(
         cm, 
         class_names, 
-        output_path="confusion_matrix.png",
+        output_path=output_path,
         title=f'Sentiment Analysis Confusion Matrix\nAccuracy: {accuracy:.4f}'
     )
+    
+    # Generate additional plots
+    
+    # 1. Save normalized confusion matrix
+    plt.figure(figsize=(10, 8))
+    cm_normalized = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+    sns.heatmap(
+        cm_normalized, 
+        annot=True, 
+        fmt='.2f', 
+        cmap='Blues',
+        xticklabels=class_names,
+        yticklabels=class_names
+    )
+    plt.ylabel('True Label')
+    plt.xlabel('Predicted Label')
+    plt.title(f'Normalized Confusion Matrix\nAccuracy: {accuracy:.4f}')
+    plt.tight_layout()
+    norm_cm_path = os.path.join(output_dir, "normalized_confusion_matrix.png")
+    plt.savefig(norm_cm_path)
+    print(f"Normalized confusion matrix saved to {norm_cm_path}")
+    
+    # 2. Generate one-vs-rest ROC curves for each class
+    plt.figure(figsize=(10, 8))
+    
+    # For storing AUC values
+    roc_auc = {}
+    
+    # Convert true labels to one-hot encoding
+    true_labels_onehot = np.zeros((len(true_labels), 3))
+    for i, label in enumerate(true_labels):
+        true_labels_onehot[i, label] = 1
+      # Calculate ROC curve and ROC area for each class
+    colors = ['blue', 'green', 'red']
+    for i, cls in enumerate(class_names):
+        # Get probabilities for this class
+        class_probs = [prob[i] for prob in probabilities]
+        
+        # Calculate ROC
+        fpr, tpr, _ = roc_curve(true_labels_onehot[:, i], class_probs)
+        roc_auc[cls] = auc(fpr, tpr)
+        
+        # Plot ROC curve
+        plt.plot(fpr, tpr, color=colors[i], lw=2,
+                 label=f'{cls} (AUC = {roc_auc[cls]:.2f})')
+    
+    # Plot diagonal line
+    plt.plot([0, 1], [0, 1], 'k--', lw=2)
+    
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('Receiver Operating Characteristic (ROC) Curves')
+    plt.legend(loc="lower right")
+    
+    roc_path = os.path.join(output_dir, "roc_curves.png")
+    plt.savefig(roc_path)
+    print(f"ROC curves saved to {roc_path}")
+      # 3. Save detailed metrics report as text file
+    metrics_report = f"""SENTIMENT ANALYSIS MODEL EVALUATION REPORT
+======================================
+Date: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+Model: Sentiment Analysis Model
+Dataset: {dataset_path}
+Samples evaluated: {len(true_labels)}
+
+OVERALL METRICS:
+---------------
+Accuracy: {accuracy:.4f} ({accuracy*100:.2f}%)
+Macro Avg F1-Score: {report['macro avg']['f1-score']:.4f}
+Weighted Avg F1-Score: {report['weighted avg']['f1-score']:.4f}
+
+METRICS BY CLASS:
+---------------"""
+    
+    for cls in class_names:
+        # Try to find matching key in report - case-sensitive first, then lowercase
+        report_key = cls if cls in report else cls.lower() if cls.lower() in report else None
+        
+        # If a matching key was found
+        if report_key:
+            metrics_report += f"""
+{cls}:
+  Precision: {report[report_key]['precision']:.4f}
+  Recall: {report[report_key]['recall']:.4f}
+  F1-Score: {report[report_key]['f1-score']:.4f}
+  Support: {report[report_key]['support']}
+  ROC AUC: {roc_auc.get(cls, 0.0):.4f}"""
+        else:
+            metrics_report += f"""
+{cls}:
+  Data not available for this class."""
+
+    metrics_report += """
+
+CONFUSION MATRIX:
+---------------
+"""
+    metrics_report += f"             {' '.join([f'{cls:>10}' for cls in class_names])}\n"
+    for i, cls in enumerate(class_names):
+        metrics_report += f"{cls:10} {' '.join([f'{cm[i,j]:10d}' for j in range(len(class_names))])}\n"
+    
+    # Add normalized confusion matrix
+    metrics_report += """
+NORMALIZED CONFUSION MATRIX (row):
+-------------------------------
+"""
+    metrics_report += f"             {' '.join([f'{cls:>10}' for cls in class_names])}\n"
+    for i, cls in enumerate(class_names):
+        metrics_report += f"{cls:10} {' '.join([f'{cm_normalized[i,j]:10.4f}' for j in range(len(class_names))])}\n"
+
+    # Write full report to file
+    report_txt_path = os.path.join(output_dir, "model_evaluation_report.txt")
+    with open(report_txt_path, 'w') as f:
+        f.write(metrics_report)
+    
+    print(f"Detailed evaluation report saved to {report_txt_path}")
     
     return cm, report
 
@@ -155,7 +377,7 @@ def main():
     parser.add_argument('--dataset', type=str, default='data/final_dataset.json', 
                         help='Path to dataset file')
     parser.add_argument('--batch-size', type=int, default=32, 
-                        help='Batch size for evaluation')
+                        help='Batch size for evaluation')   
     parser.add_argument('--output-dir', type=str, default='.', 
                         help='Directory to save outputs')
     args = parser.parse_args()
@@ -163,6 +385,10 @@ def main():
     # Set device
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"Using device: {device}")
+    
+    # Ensure output directory exists
+    os.makedirs(args.output_dir, exist_ok=True)
+    print(f"Output will be saved to: {args.output_dir}")
     
     # Check if files exist
     if not os.path.exists(args.model_path):
@@ -174,13 +400,17 @@ def main():
     if not os.path.exists(args.dataset):
         print(f"Error: Dataset file not found at {args.dataset}")
         return
-    
-    # Create model and load weights with correct architecture detection
+      # Create model and load weights with correct architecture detection
     model, tokenizer = create_model_from_checkpoint(args.config_path, args.model_path, device)
     
     # Evaluate model
     cm, report = evaluate_model(
-        model, tokenizer, args.dataset, device, batch_size=args.batch_size
+        model, tokenizer, args.dataset, 
+        output_dir=args.output_dir, 
+        device=device, 
+        batch_size=args.batch_size,
+        sample_ratio=0.1,
+        max_samples=1000
     )
     
     # Save report to file

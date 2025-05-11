@@ -45,13 +45,32 @@ class SentimentDataset(Dataset):
 
 def load_data(data_path):
     """Load data from JSON file and preprocess it for sentiment analysis"""
-    # Load data
-    with open(data_path, 'r') as f:
-        data = json.load(f)
+    # Load data with proper UTF-8 encoding
+    try:
+        with open(data_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except UnicodeDecodeError:
+        # Fallback to Latin-1 encoding which can handle most byte values
+        with open(data_path, 'r', encoding='latin1') as f:
+            data = json.load(f)
+    except Exception as e:
+        print(f"Error loading data file {data_path}: {e}")
+        print("Trying alternative approach with raw reading...")
+        # Try another approach by reading the raw bytes
+        with open(data_path, 'rb') as f:
+            content = f.read()
+            # Remove or replace problematic bytes
+            content = content.decode('utf-8', errors='ignore')
+            data = json.loads(content)
     
-    # Convert polarity to labels: -1 -> 0 (negative), 0 -> 1 (neutral), 1 -> 2 (positive)
+    # Convert polarity to labels if available
+    # Some datasets might use 'label' directly or have different structures
     for item in data:
-        item['label'] = item['polarity'] + 1
+        if 'polarity' in item:
+            item['label'] = item['polarity'] + 1
+        elif 'sentiment' in item and isinstance(item['sentiment'], int):
+            item['label'] = item['sentiment']
+        # If label is already present, leave it as is
     
     return data
 

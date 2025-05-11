@@ -1,0 +1,47 @@
+SENTIMENT ANALYSIS MODEL EVALUATION REPORT
+======================================
+Date: 2025-05-11 21:13:35
+Model: Sentiment Analysis Model
+Dataset: final_combined_balanced.json
+Samples evaluated: 1000
+
+OVERALL METRICS:
+---------------
+Accuracy: 0.9090 (90.90%)
+Macro Avg F1-Score: 0.9125
+Weighted Avg F1-Score: 0.9093
+
+METRICS BY CLASS:
+---------------
+Negative:
+  Precision: 0.9035
+  Recall: 0.8939
+  F1-Score: 0.8987
+  Support: 377.0
+  ROC AUC: 0.9715
+Neutral:
+  Precision: 0.9669
+  Recall: 0.9427
+  F1-Score: 0.9546
+  Support: 279.0
+  ROC AUC: 0.9945
+Positive:
+  Precision: 0.8704
+  Recall: 0.8983
+  F1-Score: 0.8841
+  Support: 344.0
+  ROC AUC: 0.9662
+
+CONFUSION MATRIX:
+---------------
+               Negative    Neutral   Positive
+Negative          337          4         36
+Neutral             6        263         10
+Positive           30          5        309
+
+NORMALIZED CONFUSION MATRIX (row):
+-------------------------------
+               Negative    Neutral   Positive
+Negative       0.8939     0.0106     0.0955
+Neutral        0.0215     0.9427     0.0358
+Positive       0.0872     0.0145     0.8983
