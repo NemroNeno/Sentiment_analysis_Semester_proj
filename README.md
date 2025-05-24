@@ -1,36 +1,42 @@
 # Sentiment Analysis Model
 
-This project implements a sentiment analysis model using PyTorch and BERT embeddings. The model classifies text as negative, neutral, or positive sentiment.
+This project implements an enhanced sentiment analysis model using PyTorch, BERT embeddings, and LSTM-based architectures. The model classifies text as negative, neutral, or positive sentiment with improved handling for balanced datasets.
 
 ## Project Structure
 
-- `train.py`: Main script to run the training process
-- `models.py`: Neural network model definitions
-- `enhanced_models.py`: Advanced model architectures with improved performance
-- `dataset.py`: Data loading and preprocessing utilities
-- `utils.py`: General utility functions for model initialization and visualization
-- `train_utils.py`: Training and evaluation loop functions
-- `analyze_results.py`: Script to analyze results without retraining
-- `predict_sentiment.py`: Script for making predictions with a trained model
+- `enhanced_models.py`: Advanced model architectures with improved performance and support for varied configurations
+- `load_sentiment_model.py`: Utilities for loading models with architecture detection
+- `dataset.py`: Data loading and preprocessing utilities with robust encoding support
+- `evaluate_model.py`: Comprehensive model evaluation script with metrics and visualizations
 - `train_enhanced.py`: Script to train enhanced models with class balancing
-- `analyze_bias.py`: Script to analyze model bias and misclassifications
-- `compare_models.py`: Script to compare performance across different models
+- `train_utils.py`: Training and evaluation loop functions
+- `utils.py`: General utility functions
+- `sentiment_demo.py`: Interactive script to test model predictions
+- `sentiment_app.py`: Streamlit web interface for interactive sentiment analysis
+- `test_json_loading.py`: Utility to diagnose dataset loading issues
 - `requirements.txt`: Dependencies for the project
 
-## Features
+## Key Features
 
 - Sentiment classification into negative, neutral, and positive categories
-- Uses BERT embeddings with custom fine-tuning
+- Uses BERT embeddings with configurable LSTM-based architectures
+- Robust model architecture detection when loading checkpoints
 - Multiple model architectures:
   - Basic: Attention-based LSTM architecture
-  - Enhanced: Multi-head attention with deeper LSTMs and residual connections
+  - Enhanced: Multi-head attention with deeper LSTMs
   - Balanced: Class weighting to handle dataset imbalance
-- Emoji support in text processing
-- TensorBoard integration for training visualization
-- Comprehensive metrics tracking (accuracy, F1 score, confusion matrix)
+- Comprehensive evaluation with:
+  - Confusion matrix (regular and normalized)
+  - Precision, recall, and F1-score reporting
+  - ROC curves for each sentiment class
+  - Detailed evaluation reports
+- Support for dataset sampling during evaluation to handle large datasets
+- Robust dataset loading with:
+  - UTF-8 encoding with fallbacks
+  - Support for different dataset formats and field names
+  - Error handling for problematic characters
 - Model checkpointing and best model saving
-- Bias analysis and error detection
-- Model comparison tools
+- TensorBoard integration for training visualization
 
 ## Setup and Installation
 
@@ -41,120 +47,84 @@ This project implements a sentiment analysis model using PyTorch and BERT embedd
 
 2. Prepare your dataset in the expected format (see `data/final_dataset.json` for reference)
 
-3. Run training:
-   ```bash
-   python train.py
-   ```
+3. Training is handled by `train_enhanced.py` (see model configuration in the file)
 
-## Training Visualization
+## Model Evaluation
 
-You can visualize the training process using TensorBoard:
+To evaluate a trained model on a dataset:
 
 ```bash
-tensorboard --logdir=runs
-```
-
-This will show training metrics, evaluation results, and confusion matrices.
-
-## Model Architecture
-
-The sentiment model architecture:
-- Embedding layer initialized with BERT embeddings
-- Bidirectional LSTM for sequence processing
-- Attention mechanism to focus on important parts of the text
-- Fully connected layer for final classification
-
-## Results
-
-After training, results are saved to the `runs` directory with:
-- Model checkpoints (best model and latest model)
-- Training configuration
-- Performance metrics (accuracy, F1 score)
-- Confusion matrix visualization
-- Detailed classification report
-
-## Using Trained Models
-
-### Enhanced Models for Better Performance
-
-If your model shows bias or poor performance, you can train an enhanced model:
-
-```bash
-python train_enhanced.py
-```
-
-This will train a more complex model with:
-- Multi-head attention mechanism
-- Multiple LSTM layers
-- Class weighting to handle imbalanced data
-- Deeper classification layers with residual connections
-
-Your original model remains intact, and a new model will be saved separately.
-
-### Analyze Model Bias
-
-To understand why your model might be biased toward certain classes:
-
-```bash
-python analyze_bias.py
+python evaluate_model.py --model-path "runs/custom_model/kaggle2.pt" --config-path "runs/custom_model/config.json" --dataset "data/final_dataset.json" --output-dir "evaluation_output"
 ```
 
 This will:
-- Analyze your dataset distribution
-- Find examples where the model makes errors
-- Identify patterns in misclassifications
-- Save visualizations of class distribution
+- Load the model with automatic architecture detection
+- Sample the dataset (10%, max 1000 samples by default)
+- Generate confusion matrices and performance metrics
+- Save detailed reports and visualizations to the output directory
 
-### Compare Model Performance
+## Interactive Testing
 
-To compare the original and enhanced models:
-
-```bash
-python compare_models.py
-```
-
-This will generate comparative metrics and visualizations to help you understand the improvements.
-
-### Analyze Results Without Retraining
-
-If you've already completed training and want to analyze the results:
+To interactively test the model with custom input:
 
 ```bash
-python analyze_results.py
+python sentiment_demo.py --model-path "runs/custom_model/kaggle2.pt" --config-path "runs/custom_model/config.json"
 ```
 
-This will load your best model from the most recent training run and generate visualizations and reports.
+## Interactive Web Interface
 
-### Make Predictions with Trained Model
-
-To use your trained model for sentiment analysis on new text:
+To use the Streamlit-based web interface for sentiment analysis:
 
 ```bash
-python predict_sentiment.py
+streamlit run sentiment_app.py
 ```
 
-This script loads the best model from your most recent training run and allows you to:
-- See predictions on example sentences
-- Enter your own text for sentiment analysis
+This will launch a browser window with an interactive application that lets you:
+- Analyze the sentiment of individual sentences
+- Process multiple sentences in batch mode
+- View sentiment results with confidence scores and probability distributions
+- Navigate through results of multiple sentences one by one
 
-### Model Loading and Inference Example
+The application includes a sidebar for configuring model paths and settings.
+
+## Folder Structure
+
+- `data/`: Contains the datasets used for training and evaluation
+- `runs/`: Contains trained model checkpoints, configurations and TensorBoard logs
+- `evaluation_output/`: Contains evaluation results and visualizations
+- `model_backups/`: Contains backup copies of trained models
+
+## Model Architecture
+
+The sentiment model uses an enhanced architecture:
+- BERT embeddings for rich semantic representations
+- Configurable number of bidirectional LSTM layers
+- Attention mechanism to focus on important parts of the text
+- Fully connected layer for final classification
+- Support for class balancing to handle dataset imbalance
+
+## Technical Notes
+
+- The model loading script automatically detects architecture parameters from checkpoints
+- PyTorch 2.6 compatibility is ensured with proper handling of `weights_only` parameter
+- Dataset loading handles encoding issues with fallbacks from UTF-8 to latin1
+- The evaluation script supports flexible sampling to handle large datasets
+- Report generation includes detailed performance metrics for each sentiment class
+
+## Example Model Loading and Inference
 
 ```python
-from predict_sentiment import predict_sentiment
-from models import SentimentModel
-from utils import load_model
-from transformers import BertTokenizer
 import torch
+from transformers import BertTokenizer
+from load_sentiment_model import create_model_from_checkpoint, predict_sentiment
 
 # Set device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-# Initialize tokenizer
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-
-# Load the best model
-model_path = "runs/sentiment_model_XXXXXX/checkpoints/best_model_epoch_X_f1_X.XXXX.pt"
-model, _ = load_model(model_path, SentimentModel, tokenizer, device)
+# Load the model with automatic architecture detection
+config_path = "runs/custom_model/config.json"
+model_path = "runs/custom_model/kaggle2.pt"
+model, tokenizer = create_model_from_checkpoint(config_path, model_path, device)
 
 # Make a prediction
 text = "I really enjoyed this movie! 😍"

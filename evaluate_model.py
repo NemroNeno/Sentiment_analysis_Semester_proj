@@ -217,26 +217,14 @@ def evaluate_model(model, tokenizer, dataset_path, output_dir='.', device='cpu',
     # Calculate and print accuracy
     accuracy = (np.array(predictions) == np.array(true_labels)).mean()
     print(f"\nAccuracy: {accuracy * 100:.2f}%")
-      # Output class-wise metrics
-    print("\nClass-wise Performance:")
-    # Print report keys for debugging
-    print(f"Available keys in classification report: {list(report.keys())}")
     
+    # Output class-wise metrics
+    print("\nClass-wise Performance:")
     for cls in class_names:
         print(f"{cls}:")
-        # Use the exact target_names as they appear in the report
-        try:
-            print(f"  Precision: {report[cls]['precision']:.4f}")
-            print(f"  Recall: {report[cls]['recall']:.4f}")
-            print(f"  F1-score: {report[cls]['f1-score']:.4f}")
-        except KeyError:
-            # Fallback to try lowercase if that doesn't work
-            try:
-                print(f"  Precision: {report[cls.lower()]['precision']:.4f}")
-                print(f"  Recall: {report[cls.lower()]['recall']:.4f}")
-                print(f"  F1-score: {report[cls.lower()]['f1-score']:.4f}")
-            except KeyError:
-                print(f"  Could not find metrics for class '{cls}' in the report")
+        print(f"  Precision: {report[cls.lower()]['precision']:.4f}")
+        print(f"  Recall: {report[cls.lower()]['recall']:.4f}")
+        print(f"  F1-score: {report[cls.lower()]['f1-score']:.4f}")
       # Generate additional evaluation metrics
     from sklearn.metrics import roc_curve, precision_recall_curve, auc
       # Plot confusion matrix
@@ -265,7 +253,7 @@ def evaluate_model(model, tokenizer, dataset_path, output_dir='.', device='cpu',
     plt.xlabel('Predicted Label')
     plt.title(f'Normalized Confusion Matrix\nAccuracy: {accuracy:.4f}')
     plt.tight_layout()
-    norm_cm_path = os.path.join(output_dir, "normalized_confusion_matrix.png")
+    norm_cm_path = os.path.join(args.output_dir, "normalized_confusion_matrix.png")
     plt.savefig(norm_cm_path)
     print(f"Normalized confusion matrix saved to {norm_cm_path}")
     
@@ -279,11 +267,13 @@ def evaluate_model(model, tokenizer, dataset_path, output_dir='.', device='cpu',
     true_labels_onehot = np.zeros((len(true_labels), 3))
     for i, label in enumerate(true_labels):
         true_labels_onehot[i, label] = 1
-      # Calculate ROC curve and ROC area for each class
+    
+    # Calculate ROC curve and ROC area for each class
     colors = ['blue', 'green', 'red']
+    
     for i, cls in enumerate(class_names):
         # Get probabilities for this class
-        class_probs = [prob[i] for prob in probabilities]
+        class_probs = [prob[i] for prob in all_probabilities]
         
         # Calculate ROC
         fpr, tpr, _ = roc_curve(true_labels_onehot[:, i], class_probs)
@@ -303,15 +293,16 @@ def evaluate_model(model, tokenizer, dataset_path, output_dir='.', device='cpu',
     plt.title('Receiver Operating Characteristic (ROC) Curves')
     plt.legend(loc="lower right")
     
-    roc_path = os.path.join(output_dir, "roc_curves.png")
+    roc_path = os.path.join(args.output_dir, "roc_curves.png")
     plt.savefig(roc_path)
     print(f"ROC curves saved to {roc_path}")
-      # 3. Save detailed metrics report as text file
+    
+    # 3. Save detailed metrics report as text file
     metrics_report = f"""SENTIMENT ANALYSIS MODEL EVALUATION REPORT
 ======================================
 Date: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
-Model: Sentiment Analysis Model
-Dataset: {dataset_path}
+Model: {args.model_path}
+Dataset: {args.dataset}
 Samples evaluated: {len(true_labels)}
 
 OVERALL METRICS:
@@ -322,24 +313,15 @@ Weighted Avg F1-Score: {report['weighted avg']['f1-score']:.4f}
 
 METRICS BY CLASS:
 ---------------"""
-    
+
     for cls in class_names:
-        # Try to find matching key in report - case-sensitive first, then lowercase
-        report_key = cls if cls in report else cls.lower() if cls.lower() in report else None
-        
-        # If a matching key was found
-        if report_key:
-            metrics_report += f"""
+        metrics_report += f"""
 {cls}:
-  Precision: {report[report_key]['precision']:.4f}
-  Recall: {report[report_key]['recall']:.4f}
-  F1-Score: {report[report_key]['f1-score']:.4f}
-  Support: {report[report_key]['support']}
+  Precision: {report[cls.lower()]['precision']:.4f}
+  Recall: {report[cls.lower()]['recall']:.4f}
+  F1-Score: {report[cls.lower()]['f1-score']:.4f}
+  Support: {report[cls.lower()]['support']}
   ROC AUC: {roc_auc.get(cls, 0.0):.4f}"""
-        else:
-            metrics_report += f"""
-{cls}:
-  Data not available for this class."""
 
     metrics_report += """
 
@@ -360,7 +342,7 @@ NORMALIZED CONFUSION MATRIX (row):
         metrics_report += f"{cls:10} {' '.join([f'{cm_normalized[i,j]:10.4f}' for j in range(len(class_names))])}\n"
 
     # Write full report to file
-    report_txt_path = os.path.join(output_dir, "model_evaluation_report.txt")
+    report_txt_path = os.path.join(args.output_dir, "model_evaluation_report.txt")
     with open(report_txt_path, 'w') as f:
         f.write(metrics_report)
     
@@ -377,7 +359,7 @@ def main():
     parser.add_argument('--dataset', type=str, default='data/final_dataset.json', 
                         help='Path to dataset file')
     parser.add_argument('--batch-size', type=int, default=32, 
-                        help='Batch size for evaluation')   
+                        help='Batch size for evaluation')
     parser.add_argument('--output-dir', type=str, default='.', 
                         help='Directory to save outputs')
     args = parser.parse_args()
@@ -385,10 +367,6 @@ def main():
     # Set device
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"Using device: {device}")
-    
-    # Ensure output directory exists
-    os.makedirs(args.output_dir, exist_ok=True)
-    print(f"Output will be saved to: {args.output_dir}")
     
     # Check if files exist
     if not os.path.exists(args.model_path):
