@@ -234,12 +234,6 @@ print(f"Sentiment: {result['sentiment']} (Confidence: {result['confidence']:.2f}
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 🔗 Resources & References
 
 - [Kaggle IMDB Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
