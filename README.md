@@ -55,6 +55,14 @@ In modern digital communication, sarcasm and emojis can distort textual sentimen
 
 
 ## 🛠️ Model Architecture
+## Model Architecture
+
+The sentiment model architecture:
+- Embedding layer initialized with BERT embeddings
+- Bidirectional LSTM for sequence processing
+- Attention mechanism to focus on important parts of the text
+- Fully connected layer for final classification
+
 
 ```mermaid
 graph TD;
@@ -77,7 +85,6 @@ graph TD;
 
 ---
 
----
 ## 📊 Results
 
 | Metric           | Score   |
@@ -120,13 +127,6 @@ tensorboard --logdir=runs
 
 This will show training metrics, evaluation results, and confusion matrices.
 
-## Model Architecture
-
-The sentiment model architecture:
-- Embedding layer initialized with BERT embeddings
-- Bidirectional LSTM for sequence processing
-- Attention mechanism to focus on important parts of the text
-- Fully connected layer for final classification
 
 ## Results
 
