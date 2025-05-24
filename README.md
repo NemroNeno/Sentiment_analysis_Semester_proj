@@ -1,6 +1,31 @@
-# Sentiment Analysis Model
+# 🤖 Sentiment Analysis with Sarcasm and Emoji Awareness
 
-This project implements an enhanced sentiment analysis model using PyTorch, BERT embeddings, and LSTM-based architectures. The model classifies text as negative, neutral, or positive sentiment with improved handling for balanced datasets.
+
+## 🧠 Overview
+
+In modern digital communication, sarcasm and emojis can distort textual sentiment, making traditional sentiment analysis models unreliable. This project presents a **lightweight hybrid deep learning model** combining **Bi-directional LSTMs and Multi-Head Self-Attention**, trained on a blended dataset from Kaggle IMDB and custom sarcasm-emoji rich sentences using the **Google Gemini API**.
+
+> 🎯 Achieved **90.90% Accuracy** and **0.91 F1-Score** using a resource-efficient architecture.
+
+---
+
+## 🚀 Features
+
+- ✅ Sarcasm-Aware Sentiment Analysis  
+- ✅ Emoji-Aware Contextual Understanding  
+- ✅ Lightweight Hybrid Deep Learning Model  
+- ✅ Multiple model architectures:
+  - ✅ Basic: Attention-based LSTM architecture
+  - ✅ Enhanced: Multi-head attention with deeper LSTMs and residual connections
+  - ✅ Balanced: Class weighting to handle dataset imbalance
+- ✅ Custom Dataset Generation via Gemini API  
+- ✅ BERT Tokenizer with Emoji Vocabulary Extension  
+- ✅ Fully Integrated PyTorch Training Pipeline  
+- ✅ TensorBoard integration for training visualization
+- ✅ Model checkpointing and best model saving
+- ✅ Class-Weighted Loss Handling  
+- ✅ Comprehensive metrics tracking (accuracy, F1 score, confusion matrix)
+- ✅ Deployed on Hugging Face 🤗
 
 ## Project Structure
 
@@ -16,27 +41,20 @@ This project implements an enhanced sentiment analysis model using PyTorch, BERT
 - `test_json_loading.py`: Utility to diagnose dataset loading issues
 - `requirements.txt`: Dependencies for the project
 
-## Key Features
+## Features
 
 - Sentiment classification into negative, neutral, and positive categories
-- Uses BERT embeddings with configurable LSTM-based architectures
-- Robust model architecture detection when loading checkpoints
+- Uses BERT embeddings with custom fine-tuning
 - Multiple model architectures:
   - Basic: Attention-based LSTM architecture
-  - Enhanced: Multi-head attention with deeper LSTMs
+  - Enhanced: Multi-head attention with deeper LSTMs and residual connections
   - Balanced: Class weighting to handle dataset imbalance
-- Comprehensive evaluation with:
-  - Confusion matrix (regular and normalized)
-  - Precision, recall, and F1-score reporting
-  - ROC curves for each sentiment class
-  - Detailed evaluation reports
-- Support for dataset sampling during evaluation to handle large datasets
-- Robust dataset loading with:
-  - UTF-8 encoding with fallbacks
-  - Support for different dataset formats and field names
-  - Error handling for problematic characters
-- Model checkpointing and best model saving
+- Emoji support in text processing
 - TensorBoard integration for training visualization
+- Comprehensive metrics tracking (accuracy, F1 score, confusion matrix)
+- Model checkpointing and best model saving
+- Bias analysis and error detection
+- Model comparison tools
 
 ## Setup and Installation
 
@@ -96,22 +114,86 @@ The application includes a sidebar for configuring model paths and settings.
 
 ## Model Architecture
 
-The sentiment model uses an enhanced architecture:
-- BERT embeddings for rich semantic representations
-- Configurable number of bidirectional LSTM layers
+The sentiment model architecture:
+- Embedding layer initialized with BERT embeddings
+- Bidirectional LSTM for sequence processing
 - Attention mechanism to focus on important parts of the text
 - Fully connected layer for final classification
-- Support for class balancing to handle dataset imbalance
 
-## Technical Notes
+## Results
 
-- The model loading script automatically detects architecture parameters from checkpoints
-- PyTorch 2.6 compatibility is ensured with proper handling of `weights_only` parameter
-- Dataset loading handles encoding issues with fallbacks from UTF-8 to latin1
-- The evaluation script supports flexible sampling to handle large datasets
-- Report generation includes detailed performance metrics for each sentiment class
+After training, results are saved to the `runs` directory with:
+- Model checkpoints (best model and latest model)
+- Training configuration
+- Performance metrics (accuracy, F1 score)
+- Confusion matrix visualization
+- Detailed classification report
 
-## Example Model Loading and Inference
+## Using Trained Models
+
+### Enhanced Models for Better Performance
+
+If your model shows bias or poor performance, you can train an enhanced model:
+
+```bash
+python train_enhanced.py
+```
+
+This will train a more complex model with:
+- Multi-head attention mechanism
+- Multiple LSTM layers
+- Class weighting to handle imbalanced data
+- Deeper classification layers with residual connections
+
+Your original model remains intact, and a new model will be saved separately.
+
+### Analyze Model Bias
+
+To understand why your model might be biased toward certain classes:
+
+```bash
+python analyze_bias.py
+```
+
+This will:
+- Analyze your dataset distribution
+- Find examples where the model makes errors
+- Identify patterns in misclassifications
+- Save visualizations of class distribution
+
+### Compare Model Performance
+
+To compare the original and enhanced models:
+
+```bash
+python compare_models.py
+```
+
+This will generate comparative metrics and visualizations to help you understand the improvements.
+
+### Analyze Results Without Retraining
+
+If you've already completed training and want to analyze the results:
+
+```bash
+python analyze_results.py
+```
+
+This will load your best model from the most recent training run and generate visualizations and reports.
+
+### Make Predictions with Trained Model
+
+To use your trained model for sentiment analysis on new text:
+
+```bash
+python predict_sentiment.py
+```
+
+This script loads the best model from your most recent training run and allows you to:
+- See predictions on example sentences
+- Enter your own text for sentiment analysis
+
+### Model Loading and Inference Example
 
 ```python
 import torch
@@ -131,3 +213,17 @@ text = "I really enjoyed this movie! 😍"
 result = predict_sentiment(text, model, tokenizer, device)
 print(f"Sentiment: {result['sentiment']} (Confidence: {result['confidence']:.2f}%)")
 ```
+
+---
+## 👥 Authors
+
+- **Muhammad Nabeel** — [@NemroNeno](https://github.com/NemroNeno)
+- **Umar Farooq** — [@Umar-Farooq-2112](https://github.com/Umar-Farooq-2112)
+
+---
+
+## 🔗 Resources & References
+
+- [Kaggle IMDB Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
+- [GitHub Project Repo](https://github.com/NemroNeno/Sentiment_analysis_Semester_proj.git)
+- [Hugging Face Model Deployment](https://huggingface.co/mnabeel12/sentiment_analysis/tree/main)
