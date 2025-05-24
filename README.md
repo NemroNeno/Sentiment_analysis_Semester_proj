@@ -1,6 +1,31 @@
-# Sentiment Analysis Model
+# 🤖 Sentiment Analysis with Sarcasm and Emoji Awareness
 
-This project implements a sentiment analysis model using PyTorch and BERT embeddings. The model classifies text as negative, neutral, or positive sentiment.
+
+## 🧠 Overview
+
+In modern digital communication, sarcasm and emojis can distort textual sentiment, making traditional sentiment analysis models unreliable. This project presents a **lightweight hybrid deep learning model** combining **Bi-directional LSTMs and Multi-Head Self-Attention**, trained on a blended dataset from Kaggle IMDB and custom sarcasm-emoji rich sentences using the **Google Gemini API**.
+
+> 🎯 Achieved **90.90% Accuracy** and **0.91 F1-Score** using a resource-efficient architecture.
+
+---
+
+## 🚀 Features
+
+- ✅ Sarcasm-Aware Sentiment Analysis  
+- ✅ Emoji-Aware Contextual Understanding  
+- ✅ Lightweight Hybrid Deep Learning Model  
+- ✅ Multiple model architectures:
+  - ✅ Basic: Attention-based LSTM architecture
+  - ✅ Enhanced: Multi-head attention with deeper LSTMs and residual connections
+  - ✅ Balanced: Class weighting to handle dataset imbalance
+- ✅ Custom Dataset Generation via Gemini API  
+- ✅ BERT Tokenizer with Emoji Vocabulary Extension  
+- ✅ Fully Integrated PyTorch Training Pipeline  
+- ✅ TensorBoard integration for training visualization
+- ✅ Model checkpointing and best model saving
+- ✅ Class-Weighted Loss Handling  
+- ✅ Comprehensive metrics tracking (accuracy, F1 score, confusion matrix)
+- ✅ Deployed on Hugging Face 🤗
 
 ## Project Structure
 
@@ -17,20 +42,59 @@ This project implements a sentiment analysis model using PyTorch and BERT embedd
 - `compare_models.py`: Script to compare performance across different models
 - `requirements.txt`: Dependencies for the project
 
-## Features
 
-- Sentiment classification into negative, neutral, and positive categories
-- Uses BERT embeddings with custom fine-tuning
-- Multiple model architectures:
-  - Basic: Attention-based LSTM architecture
-  - Enhanced: Multi-head attention with deeper LSTMs and residual connections
-  - Balanced: Class weighting to handle dataset imbalance
-- Emoji support in text processing
-- TensorBoard integration for training visualization
-- Comprehensive metrics tracking (accuracy, F1 score, confusion matrix)
-- Model checkpointing and best model saving
-- Bias analysis and error detection
-- Model comparison tools
+## 📂 Dataset
+
+- 📦 [IMDB Sentiment Dataset (Kaggle)](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
+- 🤖 Custom Sarcasm + Emoji Dataset using Google Gemini API  
+- Format: JSON with `sentence` and `polarity` keys  
+- Polarity: `-1` = Negative, `0` = Neutral, `1` = Positive  
+- Tokenized using `bert-base-uncased` extended with emoji tokens
+
+---
+
+
+## 🛠️ Model Architecture
+
+```mermaid
+graph TD;
+    A[Input Sentence] --> B[Embedding Layer];
+    B --> C[Bi-Directional LSTM];
+    C --> D[Layer Normalization];
+    D --> E[Multi-Head Self-Attention];
+    E --> F[Feed Forward Network];
+    F --> G[Global Average Pooling];
+    G --> H[Classification Head];
+    H --> I[Output: Positive, Neutral, Negative]
+```
+
+---
+
+
+## 🌐 Deployment
+
+🔗 [Hugging Face Model Endpoint](https://huggingface.co/mnabeel12/sentiment_analysis/tree/main)
+
+---
+
+---
+## 📊 Results
+
+| Metric           | Score   |
+|------------------|---------|
+| **Accuracy**     | 90.90%  |
+| **Macro F1**     | 0.9125  |
+| **Weighted F1**  | 0.9093  |
+
+**Class-wise Performance:**
+
+| Class     | Precision | Recall | F1-Score | ROC AUC |
+|-----------|-----------|--------|----------|---------|
+| Negative  | 0.9235    | 0.8939 | 0.8987   | 0.9715  |
+| Neutral   | 0.9669    | 0.9427 | 0.9546   | 0.9945  |
+| Positive  | 0.8704    | 0.8983 | 0.8841   | 0.9662  |
+
+---
 
 ## Setup and Installation
 
@@ -161,3 +225,23 @@ text = "I really enjoyed this movie! 😍"
 result = predict_sentiment(text, model, tokenizer, device)
 print(f"Sentiment: {result['sentiment']} (Confidence: {result['confidence']:.2f}%)")
 ```
+
+---
+## 👥 Authors
+
+- **Muhammad Nabeel** — [@NemroNeno](https://github.com/NemroNeno)
+- **Umar Farooq** — [@Umar-Farooq-2112](https://github.com/Umar-Farooq-2112)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🔗 Resources & References
+
+- [Kaggle IMDB Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
+- [GitHub Project Repo](https://github.com/NemroNeno/Sentiment_analysis_Semester_proj.git)
+- [Hugging Face Model Deployment](https://huggingface.co/mnabeel12/sentiment_analysis/tree/main)
